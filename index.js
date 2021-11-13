@@ -1859,7 +1859,7 @@ break
     users = value.replace(/[^0-9]/g, '')+"@s.whatsapp.net"
     ini = await client.groupInviteCode(from)
     link = 'https://chat.whatsapp.com/'+ini 
-    client.sendMessage(users, "@"+sender.split("@")[0]+"\nMengundang mu untuk masuk kedalam group\n"+link, text, {
+    client.sendMessage(users, "@"+sender.split("@")[0]+"\nInvitarte a unirte al grupo\n"+link, text, {
           contextInfo: {
             mentionedJid: [sender],
           }})
@@ -2482,9 +2482,9 @@ fungsi = `
         await addWarn(sender)
         m.reply(msg.addwarn)
         cek = await cekWarn(sender)
-        if(cek === 3) {
+        if(cek === 0) {
           await client.groupRemove(from, [sender])
-          await delWarn(sender, 3)
+          await delWarn(sender, 0)
         }
       }
     }
