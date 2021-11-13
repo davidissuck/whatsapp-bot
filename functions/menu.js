@@ -1,6 +1,6 @@
 exports.menu = (v) => {
   return `
-╭─⊷❲ *MAIN* ❳
+╭─⊷❲ *JUEGO* ❳
 ├ ${v}menu
 ├ ${v}help
 ├ ${v}info
@@ -11,7 +11,7 @@ exports.menu = (v) => {
 ├ ${v}chatbot on/off
 ├ ${v}voicecommand on/off
 ╰────────
-╭─⊷❲ *FUN* ❳
+╭─⊷❲ *DIVERSIÓN* ❳
 ├ ${v}dilan
 ├ ${v}ilham
 ├ ${v}gombal
@@ -19,12 +19,12 @@ exports.menu = (v) => {
 ├ ${v}fakta
 ├ ${v}fitnah text/target/text
 ╰────────
-╭─⊷❲ *KERANG AJAIB* ❳
+╭─⊷❲ *CONCHAMÁGICA* ❳
 ├ ${v}apakah
 ├ ${v}kapankah
 ├ ${v}siapakah
 ╰────────
-╭─⊷❲ *GAME* ❳
+╭─⊷❲ *JUEGOS* ❳
 ├ ${v}truth
 ├ ${v}dare
 ├ ${v}asahotak
@@ -36,13 +36,13 @@ exports.menu = (v) => {
 ├ ${v}tekateki
 ├ ${v}suit gunting/batu/kertas
 ╰────────
-╭─⊷❲ *STICKER* ❳
+╭─⊷❲ *STICKERS* ❳
 ├ ${v}sticker
 ├ ${v}sticker <author>|<packname>
 ├ ${v}take <author>|<packname>
 ├ ${v}toimg
 ╰────────
-╭─⊷❲ *PICTURE* ❳
+╭─⊷❲ *FOTOGRAFÍA* ❳
 ├ ${v}pinterest <query>
 ├ ${v}cogan
 ├ ${v}cecan
@@ -68,7 +68,7 @@ exports.menu = (v) => {
 ├ ${v}del
 ├ ${v}delete
 ╰────────
-╭─⊷❲ *INFORMASI* ❳
+╭─⊷❲ *INFORMACIÓN* ❳
 ├ ${v}covid
 ├ ${v}translate <lang><text>
 ╰────────
@@ -79,7 +79,7 @@ exports.menu = (v) => {
 ├ ${v}cerpen
 ├ ${v}google <query>
 ╰────────
-╭─⊷❲ *DOWNLOAD* ❳
+╭─⊷❲ *DESCARGAR* ❳
 ├ ${v}igdl <link>
 ├ ${v}igvid <link>
 ├ ${v}igimg <link>
@@ -92,7 +92,7 @@ exports.menu = (v) => {
 ├ ${v}ytmp3 <link>
 ├ ${v}ytmp4 <link>
 ╰────────
-╭─⊷❲ *TEXT GENERATOR* ❳
+╭─⊷❲ *GENERADOR DE TEXTO* ❳
 ├ ${v}namaninja <text>
 ├ ${v}purba <text>
 ├ ${v}typewriter <text>
@@ -111,14 +111,14 @@ exports.menu = (v) => {
 ├ ${v}getvn <text>
 ├ ${v}listmedia
 ╰────────
-╭─⊷❲ *ABSENSI* ❳
+╭─⊷❲ *AUSENCIA* ❳
 ├ ${v}absenstart
 ├ ${v}delabsen
 ├ ${v}cekabsen
 ├ ${v}absen
 ├ ${v}izin
 ╰────────
-╭─⊷❲ *VOTING* ❳
+╭─⊷❲ *VOTAR* ❳
 ├ ${v}voting <text>
 ├ ${v}delvote
 ├ ${v}cekvote
@@ -152,7 +152,7 @@ exports.menu = (v) => {
 ├ ${v}simulasi welcome
 ├ ${v}simulasi bye
 ╰────────
-╭─⊷❲ *GROUP* ❳
+╭─⊷❲ *GRUPO* ❳
 ├ ${v}welcome on
 ├ ${v}welcome off
 ├ ${v}antidelete on
@@ -164,7 +164,7 @@ exports.menu = (v) => {
 ├ ${v}antiviewonce on
 ├ ${v}antiviewonce off
 ╰────────
-╭─⊷❲ *OWNER* ❳
+╭─⊷❲ *DUEÑO* ❳
 ├ ${v}join <link>
 ├ ${v}grouplist
 ├ ${v}addpremium @user
@@ -187,7 +187,7 @@ exports.menu = (v) => {
 };
 
 exports.menuVN = `
-╭⊷『 *MAIN* 』
+╭⊷『 *JUEGO* 』
 ├ menu
 ╰────────
 ╭⊷『 *RANDOM* 』
