@@ -1,190 +1,190 @@
 // -- send message
-exports.wait = `Mohon tunggu sebentar...`;
-exports.bye = `Selamat tinggal...`;
-exports.done = `Selesai...`;
+exports.wait = `Por favor, espere un momento...`;
+exports.bye = `Adiós...`;
+exports.done = `Finalizado...`;
 exports.next = (value) => {
-  return 'Klik next untuk '+value+' selanjutnya';
+  return 'Haga clic en siguiente para '+value+' Siguiente';
 };
-exports.packon = 'Nama pack sudah terdaftar didalam database bot';
-exports.packoff = 'Nama pack media tidak terdaftar didalam database bot';
-exports.liston = 'List media yang tersimpan dalam database bot';
-exports.getlist = 'Silahkan gunakan perintah #getimg/ #getvid/ #getvn/ #getstik untuk mengambil setiap pack media\n*Contoh* : #getimg lexa';
+exports.packon = 'El nombre del paquete ya está registrado en database-bot';
+exports.packoff = 'El nombre del paquete de medios no aparece en database-bot';
+exports.liston = 'Lista de medios almacenados en database-bot';
+exports.getlist = 'Por favor use el comando #getimg/ #getvid/ #getvn/ #getstik para recuperar pack media\n*Ejemplo* : #getimg lexa';
 exports.nolink = (value) => {
-  return 'Link tidak tersedia! silahkan masukan perintah dengan menambahkan link ' + value;
+  return '¡Enlace no disponible! por favor ingrese el comando agregando un enlace ' + value;
 };
 
 // -- Saying time
-exports.night = 'Selamat Malam';
-exports.evening = 'Selamat Sore';
-exports.day = 'Selamat Siang';
-exports.morning = 'Selamat Pagi';
+exports.night = 'Buenas noches';
+exports.evening = 'Buenas tardes';
+exports.day = 'Buenas tardes';
+exports.morning = 'Buenos días';
 
 // -- message only
-exports.admin = `Perintah ini hanya dapat dijalankan oleh admin group! \nsilahkan chat admin untuk menjalankan perintah tersebut`;
-exports.group = `Perintah ini hanya dapat dijalankan didalam group`;
-exports.premium = `Perintah ini hanya dapat digunakan oleh user premium`;
-exports.premdl = `Kamu bukan user premium, download sendiri menggunakan link\n*LINK* : `;
-exports.oversize = 'Ukuran file melebihi ukuran yang di tentukan, download sendiri melalui link dibawah\n*Link* : ';
-exports.botadmin = `Perintah ini bisa digunakan ketika bot menjadi admin`;
-exports.owner = `Perintah ini hanya bisa digunakan oleh owner bot`;
-exports.isprem = `User sudah dijadikan user premium sebelumnya`;
-exports.noprem = `Hanya User Premium yang bisa menggunakan fitur ini,silahkan chat owner untuk membeli fitur premium`;
-exports.ban = 'User sudah dibanned sebelumnya';
-exports.noban = 'User ini tidak memiliki status banned didalam database bot';
-exports.isadmin = 'Maaf bot tidak bisa mengeluarkan admin';
+exports.admin = `¡Este comando solo puede ser ejecutado por el grupo de administración! \npor favor chatee con el administrador para ejecutar el comando`;
+exports.group = `Este comando solo se puede ejecutar dentro del grupo`;
+exports.premium = `Este comando solo puede ser utilizado por usuarios premium`;
+exports.premdl = `No eres un usuario premium, descárgalo tú mismo usando el enlace\n*ENLACE*: `;
+exports.oversize = 'El tamaño del archivo excede el tamaño especificado, descárguelo usted mismo a través del siguiente enlace\n*Enlace*: ';
+exports.botadmin = `Este comando se puede usar cuando el bot se convierte en administrador`;
+exports.owner = `Este comando solo puede ser utilizado por el propietario del bot`;
+exports.isprem = `El usuario se ha convertido en un usuario premium antes`;
+exports.noprem = `Solo los usuarios premium pueden usar esta función, chatee con el propietario para comprar funciones premium`;
+exports.ban = 'El usuario ha sido baneado antes';
+exports.noban = 'Este usuario no tiene un estado prohibido en la base de datos del bot';
+exports.isadmin = 'Lo siento, los bots no pueden sacar al administrador';
 
 // -- text
-exports.notag = 'Tag salah satu anggota group';
-exports.nonum = 'Silahkan ulangi peringah ini dengan menambahkan nomor target atau reply chat';
-exports.notext = 'Silahkan ulangi perintah ini dengan menambahkan text';
-exports.reply = 'Reply pesan target...';
-exports.replyStic = 'Reply pesan stickernya...';
-exports.replyVid = 'Reply videonya...';
-exports.replyVn = 'Reply audionya...';
-exports.replyImg = 'Reply imagenya...';
-exports.noreply = 'Pesan yang kamu reply tidak mengandung reply';
+exports.notag = 'Etiquetar a un miembro del grupo';
+exports.nonum = 'Repita esta advertencia agregando el número de destino o responda al chat';
+exports.notext = 'Repita este comando agregando texto';
+exports.reply = 'Destino del mensaje de respuesta...';
+exports.replyStic = 'Etiqueta de mensaje de respuesta...';
+exports.replyVid = 'Responder al video...';
+exports.replyVn = 'Responder audio...';
+exports.replyImg = 'Responder imagen...';
+exports.noreply = 'El mensaje al que respondió no contenía una respuesta';
 exports.nolink = (value) => {
-  return 'Silahkan ulangi dengan menambahkan link ' + value;
+  return 'Repita agregando un enlace ' + value;
 };
-exports.addwarn = `⚠️ Peringatan\nKamu mendapatkan 1 peringatan`;
-exports.delwarn = `⚠️ Peringatan\nWarning kamu telah berkurang 1 peringatan`;
+exports.addwarn = `️️⚠️Advertencia\nRecibes 1 advertencia`;
+exports.delwarn = `⚠️Advertencia\nTu advertencia ha disminuido en 1 advertencia`;
 exports.cekwarn = (warn) => {
-  return `User memiliki peringatan total ${warn}`;
+  return `El usuario tiene una advertencia total ${warn}`;
 };
-exports.nowarn = `User tidak memiliki peringatan`;
-exports.Pbahasa = `Pilih bahasa yang ingin kamu gunakan
+exports.nowarn = `El usuario no tiene ninguna advertencia`;
+exports.Pbahasa = `Seleccione el idioma que desea utilizar
 
-Bahasa yang dapat digunakan
+Idioma utilizable
+- Indonesia (español)
+- English
+- Jawa
+- Sunda
+- Arab
+
+Ejemplo: /bahasa English`;
+exports.nobahasa = `Idioma no disponible.
+
+Idioma utilizable
 - Indonesia
 - English
 - Jawa
 - Sunda
 - Arab
 
-Contoh :  #bahasa Arab`;
-exports.nobahasa = `Bahasa tidak tersedia
-
-Bahasa yang dapat digunakan
-- Indonesia
-- English
-- Jawa
-- Sunda
-- Arab
-
-Contoh :  #bahasa Arab`;
-exports.online = 'Perintah diterima menyalakan bot digroup ini';
-exports.offline = 'Perintah diterima mematikan bot di group ini';
+Ejemplo: /bahasa English`;
+exports.online = 'Comando recibido, bot _*ACTIVADO*_ en este grupo';
+exports.offline = 'Comando recibido, bot _*DESACTIVADO*_ en este grupo';
 
 // -- group
-exports.onwa = 'User sudah berada didalam group';
-exports.sendlink = 'Sukses mengirim undangan ke ';
-exports.open = 'Sukses mengubah setelan group untuk mengizinkan semua anggota dapat mengirim pesan dalam group ini';
-exports.close = 'Sukses mengubah setelan group untuk mengizinkan hanya admin yang dapat mengirim pesan dalam group ini';
+exports.onwa = 'El usuario ya está en el grupo';
+exports.sendlink = 'Invitación enviada con éxito a ';
+exports.open = 'Se modificó correctamente la configuración del grupo para permitir que todos los miembros envíen mensajes en este grupo.';
+exports.close = 'Se modificó correctamente la configuración del grupo para permitir que solo los administradores envíen mensajes en este grupo';
 exports.name = (value) => {
-  return `Sukses merubah subjek menjadi ${value}`;
+  return `Éxito en el cambio de tema a ${value}`;
 };
 exports.desk = (value) => {
-  return `Sukses merubah deskripsi group menjadi ${value}`;
+  return `Se cambió correctamente la descripción del grupo a ${value}`;
 };
 exports.promote = (value) => {
-  return `Sukses menaikkan jabatan ${value} sebagai admin`;
+  return `Promoción exitosa, ${value} como administrador`;
 };
 exports.demote = (value) => {
-  return 'Sukses menurunkan jabatan ' + value;
+  return 'Éxito en el descenso, posición ' + value;
 };
 
 exports.kick = (value) => {
-  return 'Perintah di terima, mengeluarkan '+value;
+  return 'Orden recibida, emitida '+value;
 };
 exports.On = (value) => {
- return `Sukses menyalakan ${value} di group ini`;
+ return `Encendido exitosamente ${value} en este grupo`;
 };
 exports.Off = (value) => {
-  return value + ' di matikan untuk group ini';
+  return value + ' desactivado para este grupo';
 };
 exports.Thison = (value) => {
-  return value + ' sudah menyala sebelumnya';
+  return value + ' ha estado antes';
 };
 exports.Thisoff = (value) => {
-return value+ ' belum menyala sebelumnya';
+return value+ ' no encendido antes';
 };
-exports.OnorOff = 'Silahkan ulangi dengan menambahkan on/off';
-exports.antilink = 'Kamu terdeteksi mengirimkan link whatsapp group lain';
+exports.OnorOff = 'Repita agregando on/off';
+exports.antilink = 'Se te detecta enviando otro enlace de grupo de whatsapp';
 exports.setwel = (value) => {
-  return `Silahkan ulangi dengan menambahkan text
-*Contoh :*
-!setwelcome Selamat Datang @tag di @group
-Nama : @nama
-Bio : @about 
-Tanggal : @tanggal 
+  return `Repita agregando texto
+*Ejemplo:*
+!setwelcome Bienvenido @tag a @group
+Nombre: @nama
+Bio: @about 
+Fecha: @tanggal 
 
-Jangan lupa memperkenalkan diri + baca deskripsi group ya kak
+No olvide presentarse + lea la descripción del grupo, hermano
 
-*Contoh untuk setiap fungsi*` + value;
+*Ejemplos para cada función*` + value;
 };
 
 exports.setbye = (value) => {
-  return `Silahkan ulangi dengan menambahkan text
-*Contoh :*
-!setbye Selamat tinggal @tag
+  return `Repita agregando texto
+*Ejemplo:*
+!setbye Adiós @tag
 
-*Contoh untuk setiap fungsi*` + value;
+*Ejemplos para cada función*` + value;
 };
 
 exports.setweldone = (value, fungsi) => {
-  return `Berhasil mengganti welcome\n\n`
-+ value + `\n\n*Contoh untuk setiap fungsi*` + fungsi;
+  return `Bienvenida cambiada con éxito\n\n`
++ value + `\n\n*Ejemplos para cada función*` + función;
 };
 
 exports.setbyedone = (value, fungsi) => {
-  return `Berhasil mengganti bye\n\n`
-+ value + `\n\n*Contoh untuk setiap fungsi*` + fungsi;
+  return `Despedida reemplazado con éxito\n\n`
++ value + `\n\n*Ejemplos para cada función*` + función;
 };
 
 exports.default = (value) => {
-  return value + ' Kembali ke pengaturan awal';
+  return value + ' Volver a la configuración inicial';
 };
 
 exports.main = (value) => {
-  return 'Masih ada ' + value + ' berlangsung!';
+  return 'Todavía hay ' + value + ' pasando!';
 };
 exports.nomain = (value) => {
-  return 'Tidak ada ' + value + ' berlangsung!';
+  return 'No hay ninguno ' + value + ' pasando!';
 };
 exports.inmain = (value) => {
-  return 'Kamu sudah melakukan ' + value
+  return 'Has hecho ' + value
 };
 exports.hapus = (value) =>{
-  return 'Berhasil menghapus ' + value + ' di group ini';
+  return 'Eliminado con éxito ' + value + ' en este grupo';
 };
 // game
-exports.onGame = 'Masih ada soal belum terjawab di chat ini';
+exports.onGame = 'Todavía hay preguntas sin respuesta en este chat.';
 exports.soal = (text1, text2, text3) => {
   return `${text1}
 
-*Timeout*
+*Se acabó el tiempo*
 ${text2}
 
-*POIN*
+*PUNTOS*
 ${text3}
 
-Reply pesan ini untuk menjawab
-Petunjuk jawaban muncul di 10 detik terakhir`;
+Responde este mensaje para responder
+La pista de respuesta aparece en los últimos 10 segundos.`;
 };
 
-exports.timeout = 'Waktu habis jawabannya adalah ';
-exports.salah = '*Salah* !\nCoba lagi';
-exports.hampir = '*Dikit lagi* !\nCoba lagi';
+exports.timeout = 'Tiempo de espera, la respuesta es ';
+exports.salah = '*Incorrecto* !\nIntenta otra vez';
+exports.hampir = '*Casi* !\nIntenta otra vez';
 exports.benar = (value, value2) => {
-  return `*Benar*\nJawabannya adalah ${value}\nKamu mendapatkan ${value2}`;
+  return `*Derecha*\nLa respuesta es ${value}\nusted obtiene ${value2}`;
 };
 
 // afk
-exports.with = 'dengan alasan ';
+exports.with = 'con razón ';
 exports.onAfk = (value) => {
-  return 'Kamu sekarang afk ' + value
+  return 'Ahora estás afk ' + value
 };
-exports.offAfk = 'Kamu kembali dari AFK'
+exports.offAfk = 'Ya no estás AFK'
 exports.inAfk = (value, time) => {
-  return 'User sedang dalan mode Afk ' + value + '\n Pada : ' + time
+  return 'El usuario está en modo AFK ' + value + '\nSobre: ' + time
 }
