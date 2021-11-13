@@ -1,6 +1,6 @@
-// "use strict" ? difficult mode
+// "uso estricto"? modo difícil
 
-// semua functions sudah di buat sesimpel mungkin jika menemukan bug/typo dalam penulisan bisa beritahu saya di issue
+// todas las funciones se han simplificado lo más posible si encuentra un error tipográfico por escrito, hágamelo saber en el problema
 
 // connecting WhatsApp web menggunakan Baileys https://www.github.com/adiwajshing/baileys
 const {
@@ -100,7 +100,7 @@ const {
   cekWarn,
   addBahasa,
   cekBahasa
-} = require('./functions/user'); // mengubah dan mengambil data user dalam ./database/user
+} = require('./functions/user'); // cambiar y recuperar datos de usuario en ./database/user
 
 const {
   Group,
@@ -126,7 +126,7 @@ const {
   addViewonce,
   delViewonce,
   cekViewonce
-} = require('./functions/group'); // mengubah dan mengambil data dalam ./database/group
+} = require('./functions/group'); // cambiar y recuperar datos en ./database/group
 
 const {
   st,
@@ -137,7 +137,7 @@ const {
   addGamewaktu,
   addPoingame,
   addCmd
-} = require('./functions/setting-bot'); // mengubah data dalam ./database/setting-bot
+} = require('./functions/setting-bot'); // cambiar datos en ./database/setting-bot
 
 const {
   Wel,
@@ -151,10 +151,10 @@ const {
 } = require('./functions/welcome');
 
 const { msgFilter } = require('./functions/antispam')
-const { menu, menuVn } = require('./functions/menu'); // tampilan menu dalam functions/menu
+const { menu, menuVn } = require('./functions/menu'); // visualización del menú en functions/menu
 const { ind, eng, jv, snd, ar } = require('./language/index');
 
-// functions dalam ./functions/setting-bot
+// funciones en ./functions/setting-bot
 let ownerNumber = st.ownerNumber;
 let isPoingame = st.poinGame; 
 let isGamewaktu = st.gameWaktu;
@@ -166,9 +166,9 @@ let isWm = st.wm;
 let isTotalcmd = st.totalcommand;
 let hujanapi = st.hujanApi
 // -- thumbnail
-let thumb = fs.readFileSync('./temp/thumb.jpeg'); // !! jangan ganti, mau ganti ada casenya
+let thumb = fs.readFileSync('./temp/thumb.jpeg'); // !! no cambies, quiero reemplazar hay un caso
 
-let fakethumb = fs.readFileSync('./temp/thumbnail.jpeg'); // !! jangan ganti, mau ganti ada casenya
+let fakethumb = fs.readFileSync('./temp/thumbnail.jpeg'); // !! no cambies, quiero reemplazar hay un caso
 
 let baterai = {
     baterai: 0,
@@ -187,7 +187,7 @@ module.exports = client = async (client, mek) => {
     if (!mek.hasNewMessage) return;
     mek = mek.messages.all()[0];
     if (!mek.message) return;
-    if(mek.key.fromMe) return; // hapus untuk pengguna self bot namun akan error pada fitur game
+    if(mek.key.fromMe) return; // elimínelo para los usuarios de bots propios, pero habrá errores en las funciones del juego
     if (mek.key && mek.key.remoteJid == 'status@broadcast') return;
     mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
     let m = simple.smsg(client, mek);
@@ -316,7 +316,7 @@ module.exports = client = async (client, mek) => {
         modepref = 'Prefix ' + Use.prefix
       }
      
-     // functions penyebutan user premium
+     // funciones de mención de usuario premium
      if (isPremium) {
        prem = "Yes";
      } else {
@@ -430,7 +430,7 @@ switch (command) {
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
     if (isOffline === true ) {
-      return m.reply('Bot offline')
+      return m.reply('Bot sin conexión')
     }
     await addOffline(from)
     m.reply(msg.offline)
@@ -440,7 +440,7 @@ switch (command) {
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
     if (isOffline === false ) {
-      return m.reply('Bot online')
+      return m.reply('Bot en línea')
     }
     await delOffline(from)
     m.reply(msg.online)
@@ -456,7 +456,7 @@ switch (command) {
  
   case 'restart': // restart bot !!
     if(!isOwner) return m.reply(msg.owner)
-    m.reply('Restart bot, proses membutuhkan waktu kurang dari 1 menit, silahkan tunggu')
+    m.reply('Reinicie el bot, el proceso tarda menos de 1 minuto, espere')
     try {
       process.send('reset')
     } catch (e) {
@@ -467,15 +467,15 @@ switch (command) {
   case 'ping':
     const timestamp = speed();
     const latensi = speed() - timestamp 
-    m.reply(`Speed : ${latensi.toFixed(3)} Second`)
+    m.reply(`Speed: ${latensi.toFixed(3)} Second`)
   break 
   
   case 'sc':
   case 'script':
-    capt = `*Original*  : 
+    capt = `*Original*: 
 ${package.homepage}
 
-*Recode* : 
+*Recode*: 
 `
 client.sendMessage(from, capt, text, {quoted: mek})
 break
@@ -517,9 +517,9 @@ break
   
   case 'bahasa':
     if(!value) return m.reply(msg.Pbahasa)
-    if (value.toLowerCase() === "indonesia") {
-      await addBahasa(sender, "indonesia")
-      m.reply("Bahasa Indonesia terpilih\nSekarang bot akan membalas pesanmu dengan bahasa Indonesia")
+    if (value.toLowerCase() === "español") {
+      await addBahasa(sender, "español")
+      m.reply("Español seleccionado\nAhora el bot responderá tus mensajes en español.")
     } else if (value.toLowerCase() === "english") {
       await addBahasa(sender, "english")
       m.reply("Selected English\nNow the bot will reply to your message in English")
@@ -539,11 +539,11 @@ break
   
   case 'owner':
   case 'author':
-    number = '6282223014661@s.whatsapp.net'
-    capt = `Nomor : @${number.split('@')[0]}\n`
-    capt += 'Instagram : https://www.instagram.com/mrf.zvx'
-    await client.fakeLink(from, capt, thumb, 'Click in here', 'https://www.instagram.com/mrf.zvx', mek)
-   /* client.sendContact(from, '6282223014661', 'owner', {
+    number = '51973273185@s.whatsapp.net'
+    capt = `Número: @${number.split('@')[0]}\n`
+    capt += 'Instagram: https://www.instagram.com/davidissuck'
+    await client.fakeLink(from, capt, thumb, 'Haga clic aqui', 'https://www.instagram.com/davidissuck', mek)
+   /* client.sendContact(from, '51973273185', 'owner', {
 	 key: {
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
@@ -551,7 +551,7 @@ break
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text":"Nih owner ku"
+                 "text":"Aqui esta mi dueño"
                         }
 	                  }})*/
     break
@@ -570,39 +570,39 @@ break
 					}
 				}
    uptime = process.uptime()
-   teks = `*INFORMASI*
-- Nama : ${client.user.name}
-- Versi Bot : ${package.version}
-- Author: ${package.author}
-- Speed : ${process.uptime()}
-- Runtime : ${kyun(uptime)}
+   teks = `*INFORMACIÓN*
+- Nombre: ${client.user.name}
+- Versión del bot: ${package.version}
+- Autor: ${package.author}
+- Velocidad: ${process.uptime()}
+- Tiempo de ejecución: ${kyun(uptime)}
 
 *WHATSAPP*
-- Kontak : ${Object.keys(client.contacts).length}
-- Total pesan : ${totalchat.length}
-- Personal Chat : ${totalchat.length - giid.length}
-- Total group : ${giid.length}
-- Pesan belum dibaca : ${unread.length}
-- Versi Wa : ${client.user.phone.wa_version}
+- Contacto: ${Object.keys(client.contacts).length}
+- Total de mensajes: ${totalchat.length}
+- Chat personal: ${totalchat.length - giid.length}
+- Grupo total: ${giid.length}
+- Mensajes no leídos: ${unread.length}
+- Versión de WhatsApp: ${client.user.phone.wa_version}
 
-*DEVICE*
-- Baterai : ${baterai.baterai}%
-- Charge : ${baterai.cas === 'true' ? 'Charging' : 'Not charging'}
-- Device : ${device_manufacturer}
-- Versi OS : ${os_version}
-- Versi Device : ${device_model}
-- RAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-- Browser : *${client.browserDescription[1]}*
-- Versi Browser : *${client.browserDescription[2]}*
+*DISPOSITIVO*
+- Batería: ${baterai.baterai}%
+- Cargando: ${baterai.cas === 'true' ? 'Charging' : 'Not charging'}
+- Dispositivo: ${device_manufacturer}
+- Versión del sistema operativo: ${os_version}
+- Versión del dispositivo: ${device_model}
+- RAM: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+- Navegador: *${client.browserDescription[1]}*
+- Versión del navegador: *${client.browserDescription[2]}*
 
 *OWNER*
-- Instagram : https://www.instagram.com/mrf.zvx
-- WhatsApp : wa.me/6282223014661
+- Instagram: https://www.instagram.com/davidissuck
+- WhatsApp: wa.me/51973273185
 
 *SCRIPT*
 - Git : ${package.homepage}
 - License : ${package.license}` 
-  client.fakeLink(from, teks, thumb, tanggal, 'https://www.instagram.com/mrf.zvx', mek)
+  client.fakeLink(from, teks, thumb, tanggal, 'https://www.instagram.com/davidissuck', mek)
    break
     
  case 'namaninja':
@@ -628,14 +628,14 @@ break
    m.reply(has)
    break
     
-  case 'truth':
+  case 'verdad':
   case 'dare':
   case 'dilan':
   case 'ilham':
   case 'fakta':
-  case 'gombal':
+  case 'tonterias':
   case 'hacker':
-    if(command === "truth" ) {
+    if(command === "verdad" ) {
       hasil = lxa.truth()
     } else if (command === "dare" ) {
       hasil = lxa.dare()
@@ -645,13 +645,13 @@ break
       hasil = lxa.ilham()
     } else if (command === "fakta") {
       hasil = lxa.fakta()
-    } else if (command === "gombal") {
+    } else if (command === "tonterias") {
       hasil = lxa.gombal()
     } else if (command === "hacker") {
       hasil = lxa.hacker()
     }
     capt = "‣ *"+command.toUpperCase()+"*\n"+hasil
-    client.sendButton(from, capt, msg.next(command), 'Next', prefix + command)
+    client.sendButton(from, capt, msg.next(command), 'Siguiente', prefix + command)
     break
     
   case 'fitnah':
@@ -669,10 +669,10 @@ break
   
   case 'apakah':
     if(!value) return m.reply(msg.notext)
-    apa = ['Tidak', 'Iya', 'Mungkin']
+    apa = ['No', 'sí', 'Posiblemente']
     jawaban = pickRandom(apa)
-    capt = 'Pertanyaan : Apakah ' + value 
-    capt += '\nJawaban : ' + jawaban 
+    capt = 'Pregunta: es ' + value 
+    capt += '\nRespuesta : ' + respuesta 
     m.reply(capt)
   break
 
