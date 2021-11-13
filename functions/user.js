@@ -2,7 +2,7 @@ const fs = require("fs");
 const User = JSON.parse(fs.readFileSync('./database/user.json'));
 
 /**
- * menambah data user ke dalam database
+ * agregar datos de usuario a la base de datos
  * @param { string } id
  */
 const addUser = (id) => {
@@ -36,7 +36,7 @@ const addUser = (id) => {
 };
 
 /**
- * Cek data banned user dalam database
+ * Verifique los datos de usuarios prohibidos en la base de datos
  * @param { string } id 
  */
 const cekRegis = (id) => {
@@ -52,7 +52,7 @@ const cekRegis = (id) => {
 };
 
 /**
- * merubah status banned user kedalam database
+ * cambiar el estado del usuario prohibido en la base de datos
  * @param { string } id
 */
 const addRegister = (id) => {
@@ -68,7 +68,7 @@ const addRegister = (id) => {
   }
 };
 /**
- * Cek data banned user dalam database
+ * Verifique los datos de usuarios prohibidos en la base de datos
  * @param { string } id 
  */
 const cekBanned = (id) => {
@@ -84,7 +84,7 @@ const cekBanned = (id) => {
 };
 
 /**
- * merubah status banned user kedalam database
+ * cambiar el estado del usuario prohibido en la base de datos
  * @param { string } id
 */
 const addBanned = (id) => {
@@ -101,7 +101,7 @@ const addBanned = (id) => {
 };
 
 /**
- * merubah status banned user kedalam database
+ * cambiar el estado del usuario prohibido en la base de datos
  * @param { string } id
 */
 const delBanned = (id) => {
@@ -118,7 +118,7 @@ const delBanned = (id) => {
 };
 
 /**
- * Cek data premium user dalam database
+ * Verifique los datos de usuario premium en la base de datos
  * @param { string } id 
  */
 const cekPremium = (id) => {
@@ -135,7 +135,7 @@ const cekPremium = (id) => {
 
 
 /**
- * merubah status premium user kedalam database
+ * cambiar el estado del usuario premium a la base de datos
  * @param { string } id
 */
 const addPremium = (id) => {
@@ -152,7 +152,7 @@ const addPremium = (id) => {
 };
 
 /**
- * merubah status premium user kedalam database
+ * cambiar el estado del usuario premium a la base de datos
  * @param { string } id
 */
 const delPremium = (id) => {
@@ -170,7 +170,7 @@ const delPremium = (id) => {
 
 
 /**
- * Cek data voice command user dalam database
+ * Verifique los datos del comando de voz del usuario en la base de datos
  * @param { string } id 
  */
 const cekVoiceCommand = (id) => {
@@ -187,7 +187,7 @@ const cekVoiceCommand = (id) => {
 
 
 /**
- * merubah status voice command user kedalam database
+ * cambiar el estado del usuario del comando de voz a la base de datos
  * @param { string } id
 */
 const addVoiceCommand = (id) => {
@@ -204,7 +204,7 @@ const addVoiceCommand = (id) => {
 };
 
 /**
- * merubah status voice command user kedalam database
+ * cambiar el estado del usuario del comando de voz a la base de datos
  * @param { string } id
 */
 const delVoiceCommand = (id) => {
@@ -220,7 +220,7 @@ const delVoiceCommand = (id) => {
   }
 };
 /**
- * Cek data chatbot user dalam database
+ * Verifique los datos del usuario del chatbot en la base de datos
  * @param { string } id 
  */
 const cekChatbot = (id) => {
@@ -237,7 +237,7 @@ const cekChatbot = (id) => {
 
 
 /**
- * merubah status chatbot user kedalam database
+ * cambiar el estado del usuario del chatbot a la base de datos
  * @param { string } id
 */
 const addChatbot = (id) => {
@@ -254,7 +254,7 @@ const addChatbot = (id) => {
 };
 
 /**
- * merubah status chatbot user kedalam database
+ * cambiar el estado del usuario del chatbot a la base de datos
  * @param { string } id
 */
 const delChatbot = (id) => {
@@ -271,7 +271,7 @@ const delChatbot = (id) => {
 };
 
 /**
- * Cek data poin user dalam database
+ * Verifique los datos de los puntos de usuario en la base de datos
  * @param { string } id 
  */
 const cekPoin = (id) => {
@@ -287,7 +287,7 @@ const cekPoin = (id) => {
 };
 
 /**
- * menambah poin kedalam database user
+ * agregar puntos a la base de datos del usuario
  * @param { string } id
 */
 const addPoin = (id, value) => {
@@ -307,7 +307,7 @@ const addPoin = (id, value) => {
 };
 
 /**
- * mengurangi poin kedalam database user
+ * deducir puntos en la base de datos del usuario
  * @param { string } id
 */
 const delPoin = (id, value) => {
@@ -328,7 +328,7 @@ const delPoin = (id, value) => {
 
 
 /**
- * Cek data level user dalam database
+ * Verifique los datos de nivel de usuario en la base de datos
  * @param { string } id 
  */
 const cekLevel = (id) => {
@@ -344,7 +344,7 @@ const cekLevel = (id) => {
 };
 
 /**
- * menambah level kedalam database user
+ * agregar nivel a la base de datos del usuario
  * @param { string } id
 */
 const addLevel = (id) => {
@@ -361,7 +361,7 @@ const addLevel = (id) => {
 };
 
 /**
- * Cek data afk user dalam database
+ * Verifique los datos de afk del usuario en la base de datos
  * @param { string } id 
  */
 const cekAfk = (id) => {
@@ -377,7 +377,7 @@ const cekAfk = (id) => {
 };
 
 /**
- * Cek data afk user dalam database
+ * Verifique los datos de afk del usuario en la base de datos
  * @param { string } id 
  */
 const cekAfkReason = (id) => {
@@ -393,7 +393,7 @@ const cekAfkReason = (id) => {
 };
 
 /**
- * Cek data afk user dalam database
+ * Verifique los datos de afk del usuario en la base de datos
  * @param { string } id 
  */
 const cekAfkTime = (id) => {
@@ -410,7 +410,7 @@ const cekAfkTime = (id) => {
 
 
 /**
- * menambah data afk kedalam database user
+ * agregar datos afk a la base de datos del usuario
  * @param { string } id
  * @param { Object } tanggal
  * @param { Object } alasan
@@ -431,7 +431,7 @@ const addAfk = (id, tanggal, alasan) => {
 };
 
 /**
- * menghapus data afk kedalam database user
+ * eliminar datos de afk en la base de datos del usuario
  * @param { string } id
 */
 const delAfk = (id) => {
@@ -450,7 +450,7 @@ const delAfk = (id) => {
 };
 
 /**
- * Cek data banned user dalam database
+ * Verifique los datos de usuarios prohibidos en la base de datos
  * @param { string } id 
  */
 const cekWarn = (id) => {
@@ -466,7 +466,7 @@ const cekWarn = (id) => {
 };
 
 /**
- * merubah status banned user kedalam database
+ * cambiar el estado del usuario prohibido en la base de datos
  * @param { string } id
 */
 const addWarn = (id) => {
@@ -483,7 +483,7 @@ const addWarn = (id) => {
 };
 
 /**
- * merubah status banned user kedalam database
+ * cambiar el estado del usuario prohibido en la base de datos
  * @param { string } id
  * @param { number } jumlah
 */
@@ -502,7 +502,7 @@ const delWarn = (id, jumlah) => {
 
 
 /**
- * Cek semua data user dalam database
+ * Verifique todos los datos del usuario en la base de datos
  * @param { string } id 
  */
 const cekUser = (id) => {
@@ -530,7 +530,7 @@ const cekUser = (id) => {
 
 
 /**
- * Cek data bahasa user dalam database
+ * Verifique los datos del idioma del usuario en la base de datos
  * @param { string } id 
  */
 const cekBahasa = (id) => {
@@ -547,7 +547,7 @@ const cekBahasa = (id) => {
 
 
 /**
- * merubah status bahasa user kedalam database
+ * cambiar el estado del idioma del usuario en la base de datos
  * @param { string } id 
  * @param { Object } bahasa
 */
@@ -601,6 +601,6 @@ module.exports = {
  };
  
  /**
-  * semua funtion belum sempurna, jika menemukan bug/kesalahan dalam penulisan, silahkan perbaiki
-  * @mrf.zvx
+  * todas las funciones no son perfectas, si encuentra errores por escrito, corríjalos
+  * @davidissuck
   */
