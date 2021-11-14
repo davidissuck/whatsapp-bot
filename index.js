@@ -2479,13 +2479,14 @@ fungsi = `
         return !0
       } else {
         m.reply(msg.antilink)
-        await addWarn(sender)
+        await client.groupRemove(from, [sender])
+       /* await addWarn(sender)
         m.reply(msg.addwarn)
         cek = await cekWarn(sender)
         if(cek === 3) {
           await client.groupRemove(from, [sender])
           await delWarn(sender, 3)
-        }
+        }*/
       }
     }
 
