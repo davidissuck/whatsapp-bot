@@ -2482,9 +2482,9 @@ fungsi = `
         await addWarn(sender)
         m.reply(msg.addwarn)
         cek = await cekWarn(sender)
-        if(cek === 3) {
+        if(cek === 0) {
           await client.groupRemove(from, [sender])
-          await delWarn(sender, 3)
+          await delWarn(sender, 0)
         }
       }
     }
