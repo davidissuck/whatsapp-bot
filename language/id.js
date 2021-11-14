@@ -3,7 +3,7 @@ exports.wait = `Por favor, espere un momento...`;
 exports.bye = `Adiós...`;
 exports.done = `Finalizado...`;
 exports.next = (value) => {
-  return 'Haga clic en siguiente para '+value+' Siguiente';
+  return 'Haga clic en Siguiente para más '+value+'';
 };
 exports.packon = 'El nombre del paquete ya está registrado en database-bot';
 exports.packoff = 'El nombre del paquete de medios no aparece en database-bot';
