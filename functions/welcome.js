@@ -4,10 +4,9 @@ const Wel = JSON.parse(fs.readFileSync('./database/welcome.json'));
 const welAwal = `*Bienvenid@* @tag a @group
 
 *Nombre*: @nama
-*Bio*: @about 
-*Descripción*: \n@groupDesc 
+*Bio*: @about
 
-No olvide leer la descripción del grupo, ¿de acuerdo?`;
+*_No olvide leer la descripción del grupo, ¿de acuerdo?_*`;
 
 const byeAwal = `Adiós @tag`;
 /**
