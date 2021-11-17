@@ -5,7 +5,7 @@ const welAwal = `*Bienvenid@* @tag a @group
 
 *Nombre*: @nama
 *Bio*: @about 
-*Fecha*: @tanggal 
+*Descripción*: \n@groupDesc 
 
 No olvide leer la descripción del grupo, ¿de acuerdo?`;
 
