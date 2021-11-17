@@ -489,13 +489,11 @@ break
 *Nivel de cuenta* : ${isLevel}
 *Puntos totales* : ${isPoin}
 *Premium* : ${prem}
-*Fecha* : ${tanggal}
-*Modo* : ${modepref}
 *Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
     capt += menu(prefix)
-    client.send3ButtonLoc(from, thumb, capt, 'Total User : ' + User.length + '\n' + isWm, 'INFORMACIÓN', prefix + 'informacion', 'OWNER', prefix + 'owner', 'COMANDO DE VOZ', prefix + 'menuvn')
+    client.send3ButtonLoc(from, thumb, capt, 'Total User : ' + User.length + '\n' + isWm, 'OWNER', prefix + 'owner', 'INFORMACIÓN', prefix + 'informacion', 'NO TOQUES ESTE :)', prefix + 'owner')
     break
     
   case 'menuvn': case 'helpvn':
@@ -505,8 +503,6 @@ break
 *Nivel de cuenta* : ${isLevel}
 *Puntos totales* : ${isPoin}
 *Premium* : ${prem}
-*Fecha* : ${tanggal}
-*Modo* : ${modepref}
 *Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
