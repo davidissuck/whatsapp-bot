@@ -48,7 +48,7 @@ const kyun = (s) =>{
  * Penyebutan hari dan tanggal 
  */
      let d = new Date();
-     let locale = "id";
+     let locale = "pe";
      let gmt = new Date(0).getTime() - new Date("1 January 1970").getTime();
      let weton = ["Pahing", "Pon", "Wage", "Kliwon", "Legi"][
       Math.floor((d * 1 + gmt) / 84600000) % 5
@@ -66,7 +66,7 @@ const kyun = (s) =>{
     });
      let tanggal = week + " " + weton + ", " + date;
 
-    function formatDate(n, locale = 'id') {
+    function formatDate(n, locale = 'pe') {
       let d = new Date(n)
       return d.toLocaleDateString(locale, {
       weekday: 'long',
