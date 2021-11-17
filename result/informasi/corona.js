@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 async function covid(){
 	return new Promise(async(resolve, reject) => {
-		axios.get('https://covid19.go.id/')
+		axios.get('https://covid19.go.es/')
 		.then(({ data }) => {
 			const $ = cheerio.load(data)
 			const hasil = [];
