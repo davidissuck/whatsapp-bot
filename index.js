@@ -1896,7 +1896,7 @@ break
         });
     break
 
- case 'voting':
+ case 'votacion':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins) return m.reply(msg.admin)
    if(!value) return m.reply(msg.notext)
@@ -1905,14 +1905,14 @@ break
         await m.reply(msg.main('Voting'))
         return false
     }
-    caption = `*VOTING*
+    caption = `*VOTAR*
 
-Reason : ${value}
+Razón: ${value}
 
-${prefix}vote untuk vote
-${prefix}devote untuk devote`
+${prefix}vote = Sí
+${prefix}devote = No`
     client.vote[from] = [
-        await client.send2Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'Devote', false, { contextInfo:{
+        await client.send2Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'Devote', false, { contextInfo:{
           mentionedJid: client.parseMention(caption)
         }}),
         [],
@@ -1948,16 +1948,16 @@ ${prefix}devote untuk devote`
     vote.push(sender)
     listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-        caption = `*VOTING*
+        caption = `*VOTAR*
 
-REASON : ${client.vote[from][3]}
+RAZÓN: ${client.vote[from][3]}
 
-VOTE : ${vote.length}
+VOTE: ${vote.length}
 ${listVote}
 
-DEVOTE : ${devote.length}
+DEVOTE: ${devote.length}
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
     break
 
  case 'devote':
@@ -1975,16 +1975,16 @@ ${listDevote}`.trim()
     devote.push(sender)
     listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-        caption = `*VOTING*
+        caption = `*VOTAR*
 
-REASON : ${client.vote[from][3]}
+RAZÓN: ${client.vote[from][3]}
 
-VOTE : ${vote.length}
+VOTE: ${vote.length}
 ${listVote}
 
-DEVOTE : ${devote.length}
+DEVOTE: ${devote.length}
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
     break
 
 
@@ -1999,19 +1999,19 @@ ${listDevote}`.trim()
     devote = client.vote[from][2]
     listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-    caption = `*RESULT VOTING*
+    caption = `*RESULTADOS DE LA VOTACIÓN*
 
-REASON : ${client.vote[from][3]}
+RAZÓN: ${client.vote[from][3]}
 
-VOTE : ${vote.length}
+VOTE: ${vote.length}
 ${listVote}
 
-Devote : ${devote.length}
+DEVOTE: ${devote.length}
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Hapus Voting', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'ELIMINAR VOTACIÓN', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
 break
 
- case 'absenstart':
+ case 'ausente':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins) return m.reply(msg.admin)
    client.absen = client.absen ? client.absen : {}
@@ -2021,7 +2021,7 @@ break
     }
     mention = groupMembers.map(u => u.jid) 
     client.absen[from] = [
-        await client.send2Button(from, `Absen dimulai`, isWm, 'Absen', prefix + 'absen', 'Izin', prefix + 'izin', false, { contextInfo:{
+        await client.send2Button(from, `Comienza la ausencia`, isWm, 'Ausente', prefix + 'absen', 'Permiso', prefix + 'izin', false, { contextInfo:{
           mentionedJid: mention
         }}),
         [],
@@ -2030,15 +2030,15 @@ break
     break
  
  case 'hapusabsen':
- case 'delabsen':
+ case 'delausente':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins) return m.reply(msg.admin)
     if (!(from in client.absen)) {
-        await m.reply(msg.nomain('Absensi'))
+        await m.reply(msg.nomain('Asistencia'))
         throw false
     }
     delete client.absen[from]
-    m.reply(msg.hapus('Absensi'))
+    m.reply(msg.hapus('Asistencia'))
     break
  
  case 'izin':
