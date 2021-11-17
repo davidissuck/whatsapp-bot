@@ -1,47 +1,47 @@
 [
   { "author" : "MrfZvx-/",
     "index": 1,
-    "soal": "Hewan sejenis kadal yang dapat merubah warna kulitnya?",
-    "jawaban": "Bunglon"
+    "soal": "¿Un tipo de lagarto que puede cambiar el color de su piel?",
+    "jawaban": "Camaleón"
   },
   { "author" : "MrfZvx-/",
     "index": 2,
-    "soal": "Surat instruksi kepada Soeharto untuk mengambil alih keamanan Indonesia pada tanggal 11 Maret 1966?",
-    "jawaban": "Supersemar"
+    "soal": "¿Cuál es el primer tema de Duki?",
+    "jawaban": "No vendo trap"
   },
   { "author" : "MrfZvx-/",
     "index": 3,
-    "soal": "Sungai terpanjang di Benua Amerika?",
-    "jawaban": "Amazon"
+    "soal": "¿El río más largo de América?",
+    "jawaban": "Amazonas"
   },
   { "author" : "MrfZvx-/",
     "index": 4,
-    "soal": "Wanita yang tercatat dalam sejarah sebagai penjahit Bendera Pusaka Indonesia?",
-    "jawaban": "Fatmawati"
+    "soal": "¿Quién es el mayor simp que estuvo en este grupo?",
+    "jawaban": "Braulio"
   },
   { "author" : "MrfZvx-/",
     "index": 5,
-    "soal": "Lomba lari jarak jauh sepanjang 42,195 km?",
-    "jawaban": "Marathon"
+    "soal": "¿Carrera de larga distancia de 42,195 km?",
+    "jawaban": "Maratón"
   },
   { "author" : "MrfZvx-/",
     "index": 6,
-    "soal": "Garis yang membagi Bumi menjadi dua bagian belahan utara dan belahan selatan?",
-    "jawaban": "Khatulistiwa"
+    "soal": "¿La línea que divide la Tierra en los hemisferios norte y sur?",
+    "jawaban": "Ecuador"
   },
   { "author" : "MrfZvx-/",
     "index": 7,
-    "soal": "Kota yang berdiri sejak tahun 682 ini disebut sebagai kota tertua di Indonesia?",
-    "jawaban": "Palembang"
+    "soal": "¿Dónde se encuentra la séptima maravilla del mundo?",
+    "jawaban": "Cusco"
   },
   { "author" : "MrfZvx-/",
     "index": 8,
-    "soal": "Sebutan untuk gaya tarik-menarik yang terjadi di alam semesta termasuk Bumi?",
-    "jawaban": "Gravitasi"
+    "soal": "¿Cuál es el nombre de la fuerza de atracción que se produce en el universo, incluida la Tierra?",
+    "jawaban": "Gravedad"
   },
   { "author" : "MrfZvx-/",
     "index": 9,
-    "soal": "Nama film yang bercerita tentang robot yang dapat berubah menjadi kendaran?",
+    "soal": "¿El nombre de la película que cuenta la historia de un robot que puede convertirse en vehículo?",
     "jawaban": "Transformers"
   },
   { "author" : "MrfZvx-/",
