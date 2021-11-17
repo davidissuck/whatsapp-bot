@@ -388,7 +388,7 @@ for ( var L of lexa){
     lari = fs.readFileSync('./database/media/sticker/lari.webp')
    //return client.sendMessage(from, lari, sticker, {quoted: mek})
    capt = 'Hai @'+sender.split('@')[0]+' Lexa disini'
-   return client.send2ButtonLoc(from, thumb, capt, 'Klik button untuk menampilkan menu dan informasi', 'Menu', prefix + 'menu', 'Informasi', prefix + 'informasi', false, {
+   return client.send2ButtonLoc(from, thumb, capt, 'Haga clic en el botón para mostrar el menú y la información', 'Menú', prefix + 'menu', 'Información', prefix + 'informacion', false, {
           contextInfo: {
             mentionedJid: client.parseMention(capt),
           },
@@ -484,35 +484,35 @@ break
 //-- Rapiin dikit:v -hns
   case 'menu': case 'help':
     m.reply(msg.wait)
-    capt = `Hi ${pushname} ${ucapanWaktu}
+    capt = `Hola ${pushname}
     
-*Level akun* : ${isLevel}
-*Total Poin* : ${isPoin}
+*Nivel de cuenta* : ${isLevel}
+*Puntos totales* : ${isPoin}
 *Premium* : ${prem}
-*Tanggal* : ${tanggal}
-*Mode* : ${modepref}
-*Runtime* : ${kyun(process.uptime())}
+*Fecha* : ${tanggal}
+*Modo* : ${modepref}
+*Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
     capt += menu(prefix)
-    client.send3ButtonLoc(from, thumb, capt, 'Total hit : ' + isTotalcmd + '\nTotal User : ' + User.length + '\n' + isWm, 'INFORMASI', prefix + 'informasi', 'OWNER', prefix + 'owner', 'VOICE COMMAND', prefix + 'menuvn')
+    client.send3ButtonLoc(from, thumb, capt, 'Total User : ' + User.length + '\n' + isWm, 'INFORMACIÓN', prefix + 'informacion', 'OWNER', prefix + 'owner', 'COMANDO DE VOZ', prefix + 'menuvn')
     break
     
   case 'menuvn': case 'helpvn':
     m.reply(msg.wait)
-    capt = `Hi ${pushname} ${ucapanWaktu}
+    capt = `Hi ${pushname}
     
-*Level akun* : ${isLevel}
-*Total Poin* : ${isPoin}
+*Nivel de cuenta* : ${isLevel}
+*Puntos totales* : ${isPoin}
 *Premium* : ${prem}
-*Tanggal* : ${tanggal}
-*Mode* : ${modepref}
-*Runtime* : ${kyun(process.uptime())}
+*Fecha* : ${tanggal}
+*Modo* : ${modepref}
+*Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
     capt += '\n*VOICE COMMAND*\n' + msg.vnCmd(prefix)
     capt += menuVN
-    client.send3ButtonLoc(from, thumb, capt, 'Total hit : ' + isTotalcmd + '\nTotal User : ' + User.length + '\n' + isWm, 'INFORMASI', prefix + 'informasi', 'OWNER', prefix + 'owner', 'SCRIPT', prefix + 'script')
+    client.send3ButtonLoc(from, thumb, capt, 'Total User : ' + User.length + '\n' + isWm, 'INFORMACIÓN', prefix + 'informacion', 'OWNER', prefix + 'owner', 'SCRIPT', prefix + 'script')
     break
   
   case 'bahasa':
@@ -557,7 +557,7 @@ break
     break
     
    case 'info':
-   case 'informasi':
+   case 'informacion':
    const unread = await client.loadAllUnreadMessages ();
    i = []
    giid = []
@@ -632,7 +632,7 @@ break
   case 'dare':
   case 'dilan':
   case 'ilham':
-  case 'fakta':
+  case 'hechos':
   case 'tonterias':
   case 'hacker':
     if(command === "verdad" ) {
@@ -643,7 +643,7 @@ break
       hasil = lxa.dilan()
     } else if (command === "ilham") {
       hasil = lxa.ilham()
-    } else if (command === "fakta") {
+    } else if (command === "hechos") {
       hasil = lxa.fakta()
     } else if (command === "tonterias") {
       hasil = lxa.gombal()
@@ -1323,26 +1323,26 @@ case 'nightcore':
  
  case 'covid':
    covid = await lxa.covid()
-   capt = '*INFORMASI COVID INDONESIA*\n'
-   capt += 'Positif : ' + covid.indo.indoP
-   capt += '\nMeninggal : ' + covid.indo.indoM
-   capt += '\nSembuh : ' + covid.indo.indoS
-   capt += '\nLast Update : ' + covid.indo.indoU
-   capt += '\n\n*INFORMASI COVID GLOBAL*' 
-   capt += '\nJumlah : ' + covid.global.negara + ' Negara'
-   capt += '\nPositif : ' + covid.global.positif
-   capt += '\nMeninggal : ' + covid.global.meninggal
-   capt += '\nLast Update : ' + covid.global.update
+   capt = '*INFORMACIÓN DE COVID DE PERÚ*\n'
+   capt += 'Positivos: ' + covid.indo.indoP
+   capt += '\nFallecidos: ' + covid.indo.indoM
+   capt += '\nSanados: ' + covid.indo.indoS
+   capt += '\nÚltima actualización: ' + covid.indo.indoU
+   capt += '\n\n*INFORMACIÓN COVID GLOBAL*' 
+   capt += '\nMonto: ' + covid.global.negara + ' Negara'
+   capt += '\nPositivos: ' + covid.global.positif
+   capt += '\nFallecidos: ' + covid.global.meninggal
+   capt += '\nÚltima actualización: ' + covid.global.update
    m.reply(capt)
    break
 
  case 'cerpen':
    cerpen = await lxa.RandomCerpen()
    if(cerpen.status === 500) return m.reply('Error')
-   capt = '*Judul* : ' + cerpen.result.Judul
-   capt += '\n*Karangan* : ' + cerpen.result.Penulis
+   capt = '*Título*: ' + cerpen.result.Judul
+   capt += '\n*Ensayo*: ' + cerpen.result.Penulis
    capt += '\n\n' + readMore + cerpen.result.cerita
-   capt += '\n*Sumber* : ' + cerpen.result.sumber
+   capt += '\n*Fuente*: ' + cerpen.result.sumber
    m.reply(capt)
    break
 
@@ -1372,15 +1372,15 @@ case 'joox':
    m.reply(msg.wait)
    link.map((video) => {
      capt += "\n________________________\n\n"
-     capt += '*Title* : ' + video.title
-     capt += '\n*Link* : ' + video.url
-     capt += '\n*Durasi* : ' + video.timestamp
-     capt += '\n*Upload* : ' + video.ago
+     capt += '*Título*: ' + video.title
+     capt += '\n*Enlace*: ' + video.url
+     capt += '\n*Duración*: ' + video.timestamp
+     capt += '\n*Subido*: ' + video.ago
    })
    capt += ''
    await client.adReply(from, capt, text, 'YT Search : ' + value, tanggal, thumb, link[0].url)
    } catch {
-     return m.reply('Musik tidak ditemukan')
+     return m.reply('Música no encontrada')
    }
   break
 
@@ -1391,7 +1391,7 @@ case 'joox':
    msg = res.map(({ title, link, snippet}) => {
     return `*${title}*\n${link}\n${snippet}`
   }).join`\n\n`
-   await client.adReply(from, msg, text, 'GOOGLE SEARCH : ' + value, tanggal, thumb, 'https://www.instagram.com/p/CTKtDqeBgY5/?utm_medium=copy_link')
+   await client.adReply(from, msg, text, 'GOOGLE SEARCH : ' + value, tanggal, thumb, 'https://www.instagram.com/davidissuck')
    break
 
  case "playstore":
@@ -1400,10 +1400,10 @@ case 'joox':
      let play = await lxa.playstore(value); 
      store = '*PLAY STORE*\n'
      for (let i of play) {
-       store += `*Nama* : ${i.name}
-*Link* : ${i.link}
-*Dev* : ${i.developer}
-*Link Dev* : ${i.link_dev}\n────────────────\n`;
+       store += `*Nombre*: ${i.name}
+*Enlace*: ${i.link}
+*Desarrollador*: ${i.developer}
+*Enlace de desarrollo*: ${i.link_dev}\n────────────────\n`;
         } 
      m.reply(store);
    break;
@@ -1415,18 +1415,18 @@ case 'joox':
    if(!link) return ('Error')
    m.reply(msg.wait)
   // img = await getBuffer(link[0].thumb)
-   musik = `*MUSIK PLAYER*
+   musik = `*REPRODUCTOR DE MÚSICA*
 
-3 Lagu di temukan..
-*Download 1*
-Judul : ${link[0].title}
+3 canciones encontradas...
+*Descargar 1*
+Título: ${link[0].title}
 
-*Download 2*
-Judul : ${link[1].title}
+*Descargar 2*
+Título: ${link[1].title}
 
-*Download 3*
-Judul : ${link[2].title}` 
- client.send3ButtonLoc(from, thumb, musik, 'Pilih lagu yang akan di download', 'Download 1', prefix + 'ytmp3 ' + link[0].url, 'Download 2', prefix + 'ytmp3 ' + link[1].url, 'Download 3', prefix + 'ytmp3 ' + link[2].url)
+*Descargar 3*
+Título: ${link[2].title}` 
+ client.send3ButtonLoc(from, thumb, musik, 'Seleccione la canción para descargar', 'Descargar 1', prefix + 'ytmp3 ' + link[0].url, 'Descargar 2', prefix + 'ytmp3 ' + link[1].url, 'Descargar 3', prefix + 'ytmp3 ' + link[2].url)
  break
 
  case 'ytmp3':
@@ -1442,8 +1442,8 @@ Judul : ${link[2].title}`
      })
    } else {
      img = await getBuffer(res.thumb)
-     capt = 'Kualitas : ' + res.quality
-     capt += '\nSize : ' + res.size
+     capt = 'Calidad: ' + res.quality
+     capt += '\nTamaño: ' + res.size
      client.adReplyAudio(from, buff, document, res.judul, capt, img, value)
    }
 	break
@@ -1461,8 +1461,8 @@ Judul : ${link[2].title}`
      })
    } else {
      img = await getBuffer(res.thumb)
-     capt = 'Kualitas : ' + res.quality
-     capt += '\nSize : ' + res.size
+     capt = 'Calidad: ' + res.quality
+     capt += '\nTamaño: ' + res.size
      await client.adReplyVideo(from, buff, document, res.judul, capt, img, value, mek)
    }
 	break
@@ -1471,7 +1471,7 @@ Judul : ${link[2].title}`
  case 'igimg':
  case 'igdl':
    if(!isUrl(value) && !value) return m.reply(msg.nolink('instagram'));
-   if(isUrl(value) && !value.match("instagram.com/p/")) return m.reply('Link invalid');
+   if(isUrl(value) && !value.match("instagram.com/p/")) return m.reply('Link inválido');
    m.reply(msg.wait)
    igdl = await lxa.igDl(value)
    buffer = await getBuffer(igdl.result.link)
@@ -1488,7 +1488,7 @@ Judul : ${link[2].title}`
  case 'reels':
  case 'reel':
    if(!isUrl(value) && !value) return m.reply(msg.nolink('instagram reel'));
-   if(isUrl(value) && !value.match("instagram.com/reel")) return m.reply('Link invalid');
+   if(isUrl(value) && !value.match("instagram.com/reel")) return m.reply('Link inválido');
    m.reply(msg.wait)
    igdl = await lxa.igDl(value)
    buffer = await getBuffer(igdl.result.link)
@@ -1502,7 +1502,7 @@ Judul : ${link[2].title}`
  case 'tiktoknowm':
  case 'tiktokaudio':
    if(!isUrl(value) && !value) return m.reply(msg.nolink('tiktok'));
-   if(isUrl(value) && !value.match("tiktok.com")) return m.reply('Link invalid');
+   if(isUrl(value) && !value.match("tiktok.com")) return m.reply('Link inválido');
    m.reply(msg.wait)
    ttdl = await lxa.Ttdl(value)
    if(command.includes('nowm')) {
@@ -1545,7 +1545,7 @@ Judul : ${link[2].title}`
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
     mention = groupMembers.map(u => u.jid) 
-    m.reply('Tag all Member\n' + mention.map((v, i) => i + 1 + '. @' + v.replace(/@.+/, '')).join`\n`, null, {
+    m.reply('Etiquetar a todos los miembros\n' + mention.map((v, i) => i + 1 + '. @' + v.replace(/@.+/, '')).join`\n`, null, {
     contextInfo: { mentionedJid: mention }
   })
   break
@@ -1555,8 +1555,8 @@ Judul : ${link[2].title}`
     if(!value) return
     join = value.split('https://chat.whatsapp.com/')[1]
     await client.acceptInvite(join).then((res) => {
-      client.sendMessage(res.gid,`Hai 👋🏻\n@${sender.split("@")[0]} Mengundang ku untuk masuk ke dalam Group`, text, {contextInfo:{mentionedJid:[sender]}})
-      m.reply(`Succses Join Group!`)
+      client.sendMessage(res.gid,`Hola 👋🏻\n@${sender.split("@")[0]} invítame a unirme al grupo`, text, {contextInfo:{mentionedJid:[sender]}})
+      m.reply(`¡Unirme al grupo exitoso!`)
       }).catch((err) => m.reply("‣ "+jsonformat(err)))
     break
 
@@ -1578,16 +1578,16 @@ Judul : ${link[2].title}`
 	      ppimg = 'https://telegra.ph/file/7c0b1068736040b515d81.jpg';
 	    }
 	 Prema = cekPremium(siapa) ? 'Yes' : 'No'
-   capt = '*PROFILE*\n\n'
-   capt += '*Nomor* : ' + siapa.split('@')[0]
-   capt += '\n*Nama* : ' + pushname
-   capt += '\n*Bio* : ' + about
-   capt += '\n*Premium* : ' + Prema
-   capt += '\n*Bahasa* : ' + cekBahasa(siapa)
-   capt += '\n*Level* : ' + cekLevel(siapa)
-   capt += '\n*Poin* : ' + cekPoin(siapa)
-   capt += '\n*Warning* : ' + cekWarn(siapa)
-   client.adReply(from, capt, text, 'Profile from database', tanggal, thumb, 'https://www.instagram.com/p/CTKtDqeBgY5/?utm_medium=copy_link', mek)
+   capt = '*PERFIL*\n\n'
+   capt += '*Número*: ' + siapa.split('@')[0]
+   capt += '\n*Nombre*: ' + pushname
+   capt += '\n*Bio*: ' + about
+   capt += '\n*Premium*: ' + Prema
+   capt += '\n*Idioma*: ' + cekBahasa(siapa)
+   capt += '\n*Nivel* : ' + cekLevel(siapa)
+   capt += '\n*Puntos* : ' + cekPoin(siapa)
+   capt += '\n*Warn* : ' + cekWarn(siapa)
+   client.adReply(from, capt, text, 'Perfil de la base de datos', tanggal, thumb, 'https://www.instagram.com/davidissuck', mek)
    break
  
  case 'grouplist':
@@ -1608,14 +1608,14 @@ Judul : ${link[2].title}`
      buff = await getBuffer(fotoProf)
      capt = '*Id* : ' + id 
      capt += owner ? '\n*Owner* : @' + owner.split('@')[0] : '\n*Owner* : -'
-     capt += '\n*Nama* : ' + subject 
-     capt += '\n*Dibuat* : ' + formatDate(creation * 1000)
-     capt += '\n*Jumlah Member* : ' + size 
-     capt += desc ? '\n*Deskripsi* : ' + desc : '\n*Deskripsi* : -'
-     capt += '\n*Id Deskripsi* : ' + descId 
-     capt += descOwner ? '\n*Deskripsi diubah oleh* : @' +  descOwner.split("@")[0] : '\n*Deskripsi diubah oleh* : -'
-     capt += descTime ? '\n*Tanggal* : ' + formatDate(descTime * 1000) : '\n*Tanggal* : -' 
-     capt += '\n\n*Kontak tersimpan* : \n'
+     capt += '\n*Nombre* : ' + subject 
+     capt += '\n*Hecha* : ' + formatDate(creation * 1000)
+     capt += '\n*Número de miembros* : ' + size 
+     capt += desc ? '\n*Descripción* : ' + desc : '\n*Descripción* : -'
+     capt += '\n*Id Descripción* : ' + descId 
+     capt += descOwner ? '\n*Descripción modificada por* : @' +  descOwner.split("@")[0] : '\n*Descripción modificada por* : -'
+     capt += descTime ? '\n*Fecha* : ' + formatDate(descTime * 1000) : '\n*Fecha* : -' 
+     capt += '\n\n*Contactos guardados* : \n'
           for (let y of participants) {
             capt += '- @' +  y.id.split("@")[0]
             capt += '\n'
@@ -1629,7 +1629,7 @@ Judul : ${link[2].title}`
             contextInfo: { mentionedJid: mem },
           });
         } catch {
-          m.reply("Link invalid");
+          m.reply("Link inválido");
         }
 break
  
@@ -1648,20 +1648,20 @@ break
    isViewonce = isViewonce ? 'Yes' : 'No'
    creation = moment(groupMetadata.creation * 1000).tz('Asia/Jakarta').format(`DD-MM-YYYY`)
    ownergc = groupMetadata.owner.split('@')[0]
-   capt = 'GROUP INFORMATIONS\n\n'
-   capt += '*Nama* : ' + groupName
-   capt += '\n*Di buat pada* : ' + creation
-   capt += '\n*Owner* : @' + ownergc
-   capt += '\n*Total Admin* : ' + groupAdmins.length
-   capt += '\n*Total Member* : ' + groupMembers.length
-   capt += '\n\nGROUP SETTING'
-   capt += '\n*Antilink* : ' + isAntilink
-   capt += '\n*Antidelete* : ' + isAntidelete
-   capt += '\n*Antiviewonce* : ' + isViewonce
-   capt += '\n*Detected* : ' + isDetect
-   capt += '\n*Welcome* : ' + isWelcome
-   capt += '\n\n*Deskripsi* : ' + groupDesc 
-   client.adReply(from, capt, text, groupName, tanggal, thumb, 'https://www.instagram.com/p/CTKtDqeBgY5/?utm_medium=copy_link')
+   capt = 'INFORMACIONES DE GRUPO\n\n'
+   capt += '*Nombre*: ' + groupName
+   capt += '\n*Hecho en*: ' + creation
+   capt += '\n*Dueño*: @' + ownergc
+   capt += '\n*Total Admins*: ' + groupAdmins.length
+   capt += '\n*Total Miembros*: ' + groupMembers.length
+   capt += '\n\nAJUSTES DE GRUPO'
+   capt += '\n*Antilink*: ' + isAntilink
+   capt += '\n*Antidelete*: ' + isAntidelete
+   capt += '\n*Antiviewonce*: ' + isViewonce
+   capt += '\n*Detected*: ' + isDetect
+   capt += '\n*Welcome*: ' + isWelcome
+   capt += '\n\n*Descripción*: ' + groupDesc 
+   client.adReply(from, capt, text, groupName, tanggal, thumb, 'https://www.instagram.com/davidissuck')
 break
  
  
@@ -1814,6 +1814,7 @@ break
   case 'kick':
     if(!isGroup) return m.reply(msg.group)
     if(!isBotAdmins) return m.reply(msg.botadmin)
+    if(!isAdmins && !isOwner) return m.reply(msg.admin)
     if(!isOwner) return m.reply(msg.owner)
     if(!dia) return m.reply(msg.notag)
     //if(dia === isAdmins) return m.reply(msg.isadmin)
@@ -1866,7 +1867,7 @@ break
           m.reply(msg.done)
     break
 
-  case 'promote':
+  case 'admin':
     if(!isGroup) return m.reply(msg.group)
     if(!isBotAdmins) return m.reply(msg.botadmin)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
@@ -1882,7 +1883,7 @@ break
         });
     break
 
-  case 'demote':
+  case 'unadmin':
     if(!isGroup) return m.reply(msg.group)
     if(!isBotAdmins) return m.reply(msg.botadmin)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
@@ -2428,7 +2429,7 @@ fungsi = `
     m.reply(msg.setbyedone(value, fungsi))
     break
 
- case 'simulasi' :
+ case 'simulacion' :
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins && !isOwner) return m.reply(msg.admin)
    if(!value) return m.reply('List Simulasi\n\n- Welcome\n-Bye')
@@ -2437,12 +2438,12 @@ fungsi = `
    tag = '@'+sender.split('@')[0]
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@tag', tag).replace('@nama', pushname).replace('@about', about).replace('@tanggal', tanggal).replace('@group', groupName)
-     client.adReply(from, capt, text, 'Selamat datang member baru', 'Member ke ' + groupMembers.length + ' Group ' + groupName, thumb, 'https://www.instagram.com/p/CTKtDqeBgY5/?utm_medium=copy_link');
+     client.adReply(from, capt, text, 'Bienvenido nuevo miembro', 'Miembro de ' + groupMembers.length + ' Group ' + groupName, thumb, 'https://www.instagram.com/davidissuck');
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@tag', tag).replace('@nama', pushname).replace('@about', about).replace('@tanggal', tanggal).replace('@group', groupName)
        m.reply(capt)
      } else {
-       m.reply('List Simulasi\n\n- Welcome\n- Bye')
+       m.reply('Lista de simulación\n\n- Welcome\n- Bye')
      }
   break
 
@@ -2491,7 +2492,7 @@ fungsi = `
     }
 
 
-// user afl
+// user afk
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
   for (let jid of jids) {
     let isOnAfk = cekAfk(jid);
@@ -2538,18 +2539,17 @@ switch(VoiceCommand) {
   
       case 'menu': case 'help':
     m.reply(msg.wait)
-    capt = `Hi ${pushname} ${ucapanWaktu}
+    capt = `Hola ${pushname}
     
-*Level akun* : ${isLevel}
-*Total Poin* : ${isPoin}
-*Premium* : ${prem}
-*Tanggal* : ${tanggal}
-*Mode* : ${modepref}
-*Runtime* : ${kyun(process.uptime())}
+*Nivel de cuenta*: ${isLevel}
+*Puntos totales*: ${isPoin}
+*Premium*: ${prem}
+*Fecha*: ${tanggal}
+*Tiempo de ejecución*: ${kyun(process.uptime())}
 `
     capt += readMore
     capt += menu(prefix)
-    client.send3ButtonLoc(from, thumb, capt, 'Total hit : ' + isTotalcmd + '\nTotal User : ' + User.length + '\n' + isWm, 'INFORMASI', prefix + 'informasi', 'OWNER', prefix + 'owner', 'VOICE COMMAND', prefix + 'menuvn')
+    client.send3ButtonLoc(from, thumb, capt, 'Total User: ' + User.length + '\n' + isWm, 'INFORMACIÓN', prefix + 'informacion', 'DUEÑO', prefix + 'owner', 'NO LO TOQUES 🌚', prefix + 'menuvn')
     break
   
   case 'dilan':
@@ -2572,7 +2572,7 @@ switch(VoiceCommand) {
    msg = way.map(({ title, link, snippet}) => {
     return `*${title}*\n${link}\n${snippet}`
   }).join`\n\n`
-   await client.adReply(from, msg, text, 'GOOGLE SEARCH : ' + value, tanggal, thumb, 'https://www.instagram.com/p/CTKtDqeBgY5/?utm_medium=copy_link')
+   await client.adReply(from, msg, text, 'GOOGLE SEARCH : ' + value, tanggal, thumb, 'https://www.instagram.com/davidissuck')
    break
 
   case 'play': 
@@ -2590,8 +2590,8 @@ switch(VoiceCommand) {
      })
    } else {
      img = await getBuffer(goo.thumb)
-     capt = 'Kualitas : ' + goo.quality
-     capt += '\nSize : ' + goo.size
+     capt = 'Calidad: ' + goo.quality
+     capt += '\nTamaño: ' + goo.size
      await client.adReplyVideo(from, buff, document, goo.judul, capt, img, link[0].url, mek)
    }
 	break
@@ -2601,8 +2601,8 @@ switch(VoiceCommand) {
 
 
 /**
- * url 1 = https://api.simsimi.net/v2/?text=${budy}&lc=id&cf=false
- * url 2 = https://api-sv2.simsimi.net/v2/?text=${budy}&lc=id&cf=false 
+ * url 1 = https://api.simsimi.net/v2/?text=${budy}&lc=es&cf=false
+ * url 2 = https://api-sv2.simsimi.net/v2/?text=${budy}&lc=es&cf=false 
  * chatbot // atur sesukamu su pilih salah satu kalo eror
 */
 
@@ -2611,7 +2611,7 @@ if(!isCmd && isChatbot === true){
  // if(isGroup) return
  // if(!isPremium) return
   if(m.mtype == 'stickerMessage') return
-  result = await fetchJson(`https://api.simsimi.net/v2/?text=${budy}&lc=id`, {method: 'get'})
+  result = await fetchJson(`https://api.simsimi.net/v2/?text=${budy}&lc=es`, {method: 'get'})
   m.reply(result.success.replace('simsimi', 'Lexa').replace('Simsimi', 'lexa').replace('simi', 'Lexa').replace('Simi', 'Lexa').replace('sim', 'Lexa'))
 }
 
