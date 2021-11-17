@@ -489,6 +489,7 @@ break
 *Nivel de cuenta* : ${isLevel}
 *Puntos totales* : ${isPoin}
 *Premium* : ${prem}
+*Fecha* : ${tanggal}
 *Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
