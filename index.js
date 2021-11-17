@@ -2252,45 +2252,45 @@ break
     await qse.quoted.copyNForward(from, true)
     break 
  
-   case 'suit':
-    salah = `Pilihan yang tersedia Gunting, Kertas, Batu\n\n*Contoh* : ${prefix}suit gunting\n`
+   case 'pipati':
+    salah = `Opciones disponibles Tijera, Papel, Piedra\n\n*Ejemplo*: ${prefix}pipati tijera\n`
     poin = 200
     if (!value) return m.reply(salah)
     var suit = Math.random()
     if (suit < 0.34) {
-        suit = 'batu'
+        suit = 'piedra'
     } else if (suit > 0.34 && suit < 0.67) {
-        suit = 'gunting'
+        suit = 'tijera'
     } else {
-        suit = 'kertas'
+        suit = 'papel'
     }
     //menentukan rules
     if (value == suit) {
       await addPoin(sender, 50)
-        m.reply(`*Kita Seri*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (±)100 XP`)
-    } else if (value == 'batu') {
-        if (suit == 'gunting') {
+        m.reply(`*Empatamos*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (±)100 XP`)
+    } else if (value == 'piedra') {
+        if (suit == 'tijera') {
           await addPoin(sender, poin)
-            m.reply(`*Kamu Menang*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (+)${poin} XP`)
+            m.reply(`*Tú ganas*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (+)${poin} XP`)
         } else {
           await delPoin(sender, poin)
-            m.reply(`*Kamu Kalah*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (-)${poin} XP`)
+            m.reply(`*Tú pierdes*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (-)${poin} XP`)
         }
-    } else if (value == 'gunting') {
-        if (suit == 'kertas') {
+    } else if (value == 'tijera') {
+        if (suit == 'papel') {
           await addPoin(sender, poin)
-            m.reply(`*Kamu Menang*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (+)${poin} XP`)
+            m.reply(`*Tú ganas*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (+)${poin} XP`)
         } else {
           await delPoin(sender, poin)
-            m.reply(`*Kamu Kalah*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (-)${poin} XP`)
+            m.reply(`*Tú pierdes*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (-)${poin} XP`)
         }
-    } else if (value == 'kertas') {
-        if (suit == 'batu') {
+    } else if (value == 'papel') {
+        if (suit == 'piedra') {
           await addPoin(sender, poin)
-            m.reply(`*Kamu Menang*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (+)${poin} XP`)
+            m.reply(`*Tú ganas*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (+)${poin} XP`)
         } else {
           await delPoin(sender, poin)
-            m.reply(`*Kamu Kalah*\n\nkamu : ${value}\nBot : ${suit}\n\nPoin (-)${poin} XP`)
+            m.reply(`*Tú pierdes*\n\nUsted: ${value}\nBot: ${suit}\n\nPuntos (-)${poin} XP`)
         }
     } else {
        m.reply(salah)
