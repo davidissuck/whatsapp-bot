@@ -483,23 +483,20 @@ break
   
 //-- Rapiin dikit:v -hns
   case 'menu': case 'help':
-    m.reply(msg.wait)
     capt = `Hola ${pushname}
     
-*Nivel de cuenta* : ${isLevel}
 *Puntos totales* : ${isPoin}
 *Premium* : ${prem}
-*Fecha* : ${tanggal}
 *Tiempo de ejecución* : ${kyun(process.uptime())}
 `
     capt += readMore
     capt += menu(prefix)
-    client.send3ButtonLoc(from, thumb, capt, 'Total User : ' + User.length + '\n' + isWm, 'OWNER', prefix + 'owner', 'INFORMACIÓN', prefix + 'informacion', 'NO TOQUES ESTE :)', prefix + 'owner')
+    client.send3ButtonLoc(from, thumb, capt, 'Usuarios totales: ' + User.length + '\n' + isWm, 'INFORMACIÓN', prefix + 'informacion', 'DUEÑO', prefix + 'owner', 'NO TOQUES ESTE :)', prefix + 'getstik michis')
     break
     
   case 'menuvn': case 'helpvn':
     m.reply(msg.wait)
-    capt = `Hi ${pushname}
+    capt = `Hola ${pushname}
     
 *Nivel de cuenta* : ${isLevel}
 *Puntos totales* : ${isPoin}
@@ -537,8 +534,8 @@ break
   case 'owner':
   case 'author':
     number = '51973273185@s.whatsapp.net'
-    capt = `Número: @${number.split('@')[0]}\n`
-    capt += 'Instagram: https://www.instagram.com/davidissuck'
+    capt = `Número:\n@${number.split('@')[0]}\n`
+    capt += 'Instagram:\nhttps://www.instagram.com/davidissuck'
     await client.fakeLink(from, capt, thumb, 'Haga clic aqui', 'https://www.instagram.com/davidissuck', mek)
    /* client.sendContact(from, '51973273185', 'owner', {
 	 key: {
@@ -594,7 +591,7 @@ break
 
 *OWNER*
 - Instagram: https://www.instagram.com/davidissuck
-- WhatsApp: wa.me/51973273185
+- WhatsApp: https://wa.me/51973273185
 
 *SCRIPT*
 - Git : ${package.homepage}
@@ -1574,7 +1571,7 @@ Título: ${link[2].title}`
 	    } catch {
 	      ppimg = 'https://telegra.ph/file/7c0b1068736040b515d81.jpg';
 	    }
-	 Prema = cekPremium(siapa) ? 'Yes' : 'No'
+	 Prema = cekPremium(siapa) ? 'Si' : 'No'
    capt = '*PERFIL*\n\n'
    capt += '*Número*: ' + siapa.split('@')[0]
    capt += '\n*Nombre*: ' + pushname
@@ -1907,12 +1904,9 @@ break
     }
     caption = `*VOTAR*
 
-Razón: ${value}
-
-${prefix}vote = Sí
-${prefix}devote = No`
+Razón: ${value}`
     client.vote[from] = [
-        await client.send2Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'Devote', false, { contextInfo:{
+        await client.send2Button(from, caption, isWm, 'PERÚ🇵🇪', prefix + 'vote', 'VENEZUELA🇻🇪', prefix + 'Devote', false, { contextInfo:{
           mentionedJid: client.parseMention(caption)
         }}),
         [],
@@ -2319,7 +2313,7 @@ break
         json.jawaban,
         setTimeout(() => {
           capt = client.game[from][1].replace(/[aiueoAIUEO]/gi, '▢')
-          m.reply("*Clue*\n"+capt.toUpperCase())
+          m.reply("*PISTA*\n"+capt.toUpperCase())
         }, isGamewaktu - 10000),
         setTimeout(() => {
            client.reply(from, msg.timeout + client.game[from][1].toUpperCase(), client.game[from][0])
@@ -2344,7 +2338,7 @@ break
         json.jawaban,
         setTimeout(() => {
           capt = client.game[from][1].replace(/[aiueoAIUEO]/gi, '▢')
-          m.reply("*Clue*\n"+capt.toUpperCase())
+          m.reply("*PISTA*\n"+capt.toUpperCase())
         }, isGamewaktu - 10000),
         setTimeout(() => {
            client.reply(from, msg.timeout + client.game[from][1].toUpperCase(), client.game[from][0])
