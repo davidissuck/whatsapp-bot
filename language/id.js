@@ -20,7 +20,7 @@ exports.day = 'Buenas tardes';
 exports.morning = 'Buenos días';
 
 // -- message only
-exports.admin = `¡Este comando solo puede ser ejecutado por el grupo de administración! \npor favor chatee con el administrador para ejecutar el comando`;
+exports.admin = `¡Este comando solo puede ser ejecutado por el grupo de administración!`;
 exports.group = `Este comando solo se puede ejecutar dentro del grupo`;
 exports.premium = `Este comando solo puede ser utilizado por usuarios premium`;
 exports.premdl = `No eres un usuario premium, descárgalo tú mismo usando el enlace\n*ENLACE*: `;
@@ -46,8 +46,8 @@ exports.noreply = 'El mensaje al que respondió no contenía una respuesta';
 exports.nolink = (value) => {
   return 'Repita agregando un enlace ' + value;
 };
-exports.addwarn = `️️⚠️Advertencia\nRecibes 1 advertencia`;
-exports.delwarn = `⚠️Advertencia\nTu advertencia ha disminuido en 1 advertencia`;
+exports.addwarn = `️️⚠️Aviso\nRecibes 1 advertencia`;
+exports.delwarn = `⚠️Aviso\nTu advertencia ha disminuido en 1 advertencia`;
 exports.cekwarn = (warn) => {
   return `El usuario tiene una advertencia total ${warn}`;
 };
@@ -116,7 +116,6 @@ exports.setwel = (value) => {
 !setwelcome Bienvenido @tag a @group
 Nombre: @nama
 Bio: @about 
-Fecha: @tanggal 
 
 No olvide presentarse + lea la descripción del grupo, hermano
 
@@ -133,12 +132,12 @@ exports.setbye = (value) => {
 
 exports.setweldone = (value, fungsi) => {
   return `Bienvenida cambiada con éxito\n\n`
-+ value + `\n\n*Ejemplos para cada función*` + función;
++ value + `\n\n*Ejemplos para cada función*` + fungsi;
 };
 
 exports.setbyedone = (value, fungsi) => {
   return `Despedida reemplazado con éxito\n\n`
-+ value + `\n\n*Ejemplos para cada función*` + función;
++ value + `\n\n*Ejemplos para cada función*` + fungsi;
 };
 
 exports.default = (value) => {
@@ -162,13 +161,13 @@ exports.onGame = 'Todavía hay preguntas sin respuesta en este chat.';
 exports.soal = (text1, text2, text3) => {
   return `${text1}
 
-*Se acabó el tiempo*
+*Tiempo de espera*
 ${text2}
 
 *PUNTOS*
 ${text3}
 
-Responde este mensaje para responder
+_*Responde este mensaje para responder*_
 La pista de respuesta aparece en los últimos 10 segundos.`;
 };
 
@@ -176,7 +175,7 @@ exports.timeout = 'Tiempo de espera, la respuesta es ';
 exports.salah = '*Incorrecto* !\nIntenta otra vez';
 exports.hampir = '*Casi* !\nIntenta otra vez';
 exports.benar = (value, value2) => {
-  return `*Derecha*\nLa respuesta es ${value}\nusted obtiene ${value2}`;
+  return `*BIEN HECHO!*\nLa respuesta es ${value}\nUsted obtiene ${value2}`;
 };
 
 // afk
