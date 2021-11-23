@@ -1,14 +1,19 @@
 {
 	"ownerNumber": [
-		"51973273185@s.whatsapp.net", "51979909866@s.whatsapp.net", "51918976687@s.whatsapp.net"
+		"51973273185@s.whatsapp.net",
+		"51979909866@s.whatsapp.net",
+		"51918976687@s.whatsapp.net",
+		"51931225652@s.whatsapp.net",
+		"51962742320@s.whatsapp.net",
+		"51953808124@s.whatsapp.net"
 	],
 	"nama": "whatsapp-bot",
-	"author": "Lexa",
+	"author": "Omega",
 	"packname": "@davidissuck",
-	"wm": "Follow me on Instagram\nhttps://www.instagram.com/davidissuck",
+	"wm": "Sigueme en Instagram\nhttps://www.instagram.com/davidissuck",
 	"gameWaktu": 30000,
 	"poinGame": 100,
 	"poinAwal": 500,
-	"totalcommand": 1,
+	"totalcommand": 1050,
 	"hujanApi": ""
 }
