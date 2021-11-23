@@ -1893,7 +1893,7 @@ break
         });
     break
 
- case 'votacion':
+ case 'voting':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins) return m.reply(msg.admin)
    if(!value) return m.reply(msg.notext)
@@ -1904,7 +1904,9 @@ break
     }
     caption = `*VOTAR*
 
-Razón: ${value}`
+*Razón:* _*${value}*_
+
+*recuerda votar sólo una vez`
     client.vote[from] = [
         await client.send2Button(from, caption, isWm, 'PERÚ🇵🇪', prefix + 'vote', 'VENEZUELA🇻🇪', prefix + 'Devote', false, { contextInfo:{
           mentionedJid: client.parseMention(caption)
@@ -1942,16 +1944,16 @@ Razón: ${value}`
     vote.push(sender)
     listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-        caption = `*VOTAR*
+        caption = `*VOTACIÓN*
 
-RAZÓN: ${client.vote[from][3]}
+*RAZÓN:* _*${client.vote[from][3]}*_
 
-VOTE: ${vote.length}
+PERÚ 🇵🇪: ${vote.length}
 ${listVote}
 
-DEVOTE: ${devote.length}
+VENEZUELA 🇻🇪: ${devote.length}
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'PERÚ🇵🇪', prefix + 'vote', 'VENEZUELA🇻🇪', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
     break
 
  case 'devote':
@@ -1971,14 +1973,14 @@ ${listDevote}`.trim()
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
         caption = `*VOTAR*
 
-RAZÓN: ${client.vote[from][3]}
+*RAZÓN:* _*${client.vote[from][3]}*_
 
-VOTE: ${vote.length}
+*PERÚ 🇵🇪:* _*${vote.length}*_
 ${listVote}
 
-DEVOTE: ${devote.length}
+*VENEZUELA 🇻🇪:* _*${devote.length}*_
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'PERÚ🇵🇪', prefix + 'vote', 'VENEZUELA🇻🇪', prefix + 'devote', 'VER VOTOS', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
     break
 
 
@@ -1995,14 +1997,14 @@ ${listDevote}`.trim()
     listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
     caption = `*RESULTADOS DE LA VOTACIÓN*
 
-RAZÓN: ${client.vote[from][3]}
+*RAZÓN:* _*${client.vote[from][3]}*_
 
-VOTE: ${vote.length}
+*PERÚ 🇵🇪:* ${vote.length}
 ${listVote}
 
-DEVOTE: ${devote.length}
+*VENEZUELA 🇻🇪:* ${devote.length}
 ${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'VOTE', prefix + 'vote', 'DEVOTE', prefix + 'devote', 'ELIMINAR VOTACIÓN', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    await client.send3Button(from, caption, isWm, 'PERÚ🇵🇪', prefix + 'vote', 'VENEZUELA🇻🇪', prefix + 'devote', 'ELIMINAR VOTACIÓN', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
 break
 
  case 'ausente':
