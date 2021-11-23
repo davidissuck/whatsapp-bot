@@ -1,6 +1,6 @@
 exports.menu = (v) => {
   return `
-╭─⊷❲ *JUEGO* ❳
+╭─⊷❲ *BOT* ❳
 ├ ${v}menu
 ├ ${v}help
 ├ ${v}info
@@ -10,120 +10,6 @@ exports.menu = (v) => {
 ├ ${v}report <text>
 ├ ${v}chatbot on/off
 ├ ${v}voicecommand on/off
-╰────────
-╭─⊷❲ *DIVERSIÓN* ❳
-├ ${v}dilan
-├ ${v}ilham
-├ ${v}gombal
-├ ${v}hacker
-├ ${v}fakta
-├ ${v}fitnah text/target/text
-╰────────
-╭─⊷❲ *CONCHAMÁGICA* ❳
-├ ${v}apakah
-├ ${v}kapankah
-├ ${v}siapakah
-╰────────
-╭─⊷❲ *JUEGOS* ❳
-├ ${v}truth
-├ ${v}dare
-├ ${v}asahotak
-├ ${v}siapakahaku
-├ ${v}susunkata
-├ ${v}tebakkalimat
-├ ${v}tebakkata
-├ ${v}tebaklirik
-├ ${v}tekateki
-├ ${v}suit gunting/batu/kertas
-╰────────
-╭─⊷❲ *STICKERS* ❳
-├ ${v}sticker
-├ ${v}sticker <author>|<packname>
-├ ${v}take <author>|<packname>
-├ ${v}toimg
-╰────────
-╭─⊷❲ *FOTOGRAFÍA* ❳
-├ ${v}pinterest <query>
-├ ${v}cogan
-├ ${v}cecan
-├ ${v}cyberpunk
-├ ${v}wallpaper
-╰────────
-╭─⊷❲ *MEDIA* ❳
-├ ${v}fast
-├ ${v}slow
-├ ${v}reverse
-├ ${v}gemuk
-├ ${v}tupai
-├ ${v}bass
-├ ${v}nightcore
-╰────────
-╭─⊷❲ *TOOLS* ❳
-├ ${v}afk <reason>
-├ ${v}fakethumb
-├ ${v}say <text>
-├ ${v}tomp3
-├ ${v}tovn
-├ ${v}q
-├ ${v}del
-├ ${v}delete
-╰────────
-╭─⊷❲ *INFORMACIÓN* ❳
-├ ${v}covid
-├ ${v}translate <lang><text>
-╰────────
-╭─⊷❲ *INTERNET* ❳
-├ ${v}playstore <query>
-├ ${v}yts <query>
-├ ${v}ytsearch <query>
-├ ${v}cerpen
-├ ${v}google <query>
-╰────────
-╭─⊷❲ *DESCARGAR* ❳
-├ ${v}igdl <link>
-├ ${v}igvid <link>
-├ ${v}igimg <link>
-├ ${v}reels <link>
-├ ${v}tiktok <link>
-├ ${v}tiktoknowm <link>
-├ ${v}tiktokaudio <link>
-├ ${v}joox <query>
-├ ${v}play <query>
-├ ${v}ytmp3 <link>
-├ ${v}ytmp4 <link>
-╰────────
-╭─⊷❲ *GENERADOR DE TEXTO* ❳
-├ ${v}namaninja <text>
-├ ${v}purba <text>
-├ ${v}typewriter <text>
-├ ${v}blackpill <text>
-├ ${v}castle <text>
-├ ${v}sans <text>
-╰────────
-╭─⊷❲ *DATABASE* ❳
-├ ${v}addimg <text>
-├ ${v}addvid <text>
-├ ${v}addstik <text>
-├ ${v}addvn <text>
-├ ${v}getimg <text>
-├ ${v}getvid <text>
-├ ${v}getstik <text>
-├ ${v}getvn <text>
-├ ${v}listmedia
-╰────────
-╭─⊷❲ *AUSENCIA* ❳
-├ ${v}absenstart
-├ ${v}delabsen
-├ ${v}cekabsen
-├ ${v}absen
-├ ${v}izin
-╰────────
-╭─⊷❲ *VOTAR* ❳
-├ ${v}voting <text>
-├ ${v}delvote
-├ ${v}cekvote
-├ ${v}vote
-├ ${v}devote
 ╰────────
 ╭─⊷❲ *ADMIN* ❳
 ├ ${v}open
@@ -153,16 +39,11 @@ exports.menu = (v) => {
 ├ ${v}simulasi bye
 ╰────────
 ╭─⊷❲ *GRUPO* ❳
-├ ${v}welcome on
-├ ${v}welcome off
-├ ${v}antidelete on
-├ ${v}antidelete off
-├ ${v}detect on
-├ ${v}detect off
-├ ${v}antilink on
-├ ${v}antilink off
-├ ${v}antiviewonce on
-├ ${v}antiviewonce off
+├ ${v}welcome on/off
+├ ${v}antidelete on/off
+├ ${v}detect on/off
+├ ${v}antilink on/off
+├ ${v}antiviewonce on/off
 ╰────────
 ╭─⊷❲ *DUEÑO* ❳
 ├ ${v}join <link>
@@ -181,8 +62,115 @@ exports.menu = (v) => {
 ├ ${v}view <link>
 ├ ${v}inspect <link>
 ├ ${v}listreport
-├ $
-├ >
+╰────────
+╭─⊷❲ *DESCARGAR* ❳
+├ ${v}igdl <link>
+├ ${v}igvid <link>
+├ ${v}igimg <link>
+├ ${v}reels <link>
+├ ${v}tiktok <link>
+├ ${v}tiktoknowm <link>
+├ ${v}tiktokaudio <link>
+├ ${v}play <query>
+├ ${v}ytmp3 <link>
+├ ${v}ytmp4 <link>
+╰────────
+╭─⊷❲ *DATABASE* ❳
+├ ${v}addimg <text>
+├ ${v}addvid <text>
+├ ${v}addstik <text>
+├ ${v}addvn <text>
+├ ${v}getimg <text>
+├ ${v}getvid <text>
+├ ${v}getstik <text>
+├ ${v}getvn <text>
+├ ${v}listmedia
+╰────────
+╭─⊷❲ *STICKERS* ❳
+├ ${v}s <autor>|<packname>
+├ ${v}sticker <author>|<packname>
+├ ${v}take <author>|<packname>
+├ ${v}toimg
+╰────────
+╭─⊷❲ *TOOLS* ❳
+├ ${v}afk <reason>
+├ ${v}fakethumb
+├ ${v}say <text>
+├ ${v}tomp3
+├ ${v}tovn
+├ ${v}q
+├ ${v}del
+├ ${v}delete
+╰────────
+╭─⊷❲ *VOTAR* ❳
+├ ${v}voting <text>
+├ ${v}delvote
+├ ${v}cekvote
+├ ${v}vote
+├ ${v}devote
+╰────────
+╭─⊷❲ *GENERADOR DE TEXTO* ❳
+├ ${v}namaninja <text>
+├ ${v}purba <text>
+├ ${v}typewriter <text>
+├ ${v}blackpill <text>
+├ ${v}castle <text>
+├ ${v}sans <text>
+╰────────
+╭─⊷❲ *INTERNET* ❳
+├ ${v}playstore <query>
+├ ${v}yts <query>
+├ ${v}ytsearch <query>
+├ ${v}cerpen
+├ ${v}google <query>
+╰────────
+╭─⊷❲ *MEDIA* ❳
+├ ${v}fast
+├ ${v}slow
+├ ${v}gemuk
+├ ${v}nightcore
+╰────────
+╭─⊷❲ *AUSENCIA* ❳
+├ ${v}absenstart
+├ ${v}delabsen
+├ ${v}cekabsen
+├ ${v}absen
+├ ${v}izin
+╰────────
+╭─⊷❲ *INFORMACIÓN* ❳
+├ ${v}covid
+├ ${v}translate <lang><text>
+╰────────
+╭─⊷❲ *CONCHAMÁGICA* ❳
+├ ${v}apakah
+├ ${v}kapankah
+├ ${v}siapakah
+╰────────
+╭─⊷❲ *FOTOGRAFÍA* ❳
+├ ${v}pinterest <query>
+├ ${v}cecan
+├ ${v}cyberpunk
+├ ${v}wallpaper
+╰────────
+╭─⊷❲ *DIVERSIÓN* ❳
+├ ${v}dilan
+├ ${v}ilham
+├ ${v}gombal
+├ ${v}hacker
+├ ${v}fakta
+├ ${v}fitnah text/target/text
+╰────────
+╭─⊷❲ *JUEGOS* ❳
+├ ${v}verdad
+├ ${v}dare
+├ ${v}asahotak
+├ ${v}siapakahaku
+├ ${v}susunkata
+├ ${v}tebakkalimat
+├ ${v}tebakkata
+├ ${v}tebaklirik
+├ ${v}tekateki
+├ ${v}pipati piedra/papel/tijera
 ╰────────`;
 };
 
