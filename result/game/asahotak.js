@@ -676,462 +676,447 @@
   },
   { "author" : "MrfZvx-/",
     "index": 136,
-    "soal": "Sekolah umum yang kurikulumnya terdapat pelajaran-pelajaran tentang ke-islaman?",
+    "soal": "¿Escuelas públicas cuyo plan de estudios contiene lecciones islámicas?",
     "jawaban": "Madrasah"
   },
   { "author" : "MrfZvx-/",
     "index": 137,
-    "soal": "Tanaman yang dapat tumbuh tanpa air pada waktu yang lama, ada di daerah gurun?",
-    "jawaban": "Kaktus"
+    "soal": "¿Las plantas que pueden crecer sin agua durante mucho tiempo, existen en áreas desérticas?",
+    "jawaban": "Cactus"
   },
   { "author" : "MrfZvx-/",
     "index": 138,
-    "soal": "Sebuah ordo berjari lima dari mamalia, diantaranya termasuk lemur, kera, dan manusia?",
-    "jawaban": "Primata"
+    "soal": "¿Una orden de mamíferos de cinco dedos, incluidos lémures, simios y humanos?",
+    "jawaban": "Primate"
   },
   { "author" : "MrfZvx-/",
     "index": 139,
-    "soal": "Blus tradisional wanita yang terbuat dari bahan tipis, dikenakan dengan sarung atau batik?",
-    "jawaban": "Kebaya"
+    "soal": "¿Red social cuyo logo tiene una F",
+    "jawaban": "Facebook"
   },
   { "author" : "MrfZvx-/",
     "index": 140,
-    "soal": "Jenis protein yang biasanya terkandung di dalam gandum, dihindari penderita celiac?",
+    "soal": "Tipos de proteína que normalmente se encuentra en el trigo",
     "jawaban": "Gluten"
   },
   { "author" : "MrfZvx-/",
     "index": 141,
-    "soal": "Olahraga bela diri yang dikembangkan oleh para Afrika di Brasil pada tahun 1500an?",
+    "soal": "¿Un deporte marcial desarrollado por africanos en Brasil en el siglo XVI?",
     "jawaban": "Capoeira"
   },
   { "author" : "MrfZvx-/",
     "index": 142,
-    "soal": "Peristiwa pengikisan padatan seperti batuan/tanah akibat transportasi angin, air, atau es?",
-    "jawaban": "Erosi"
+    "soal": "¿La erosión de sólidos como rocas/suelo debido al transporte de viento, agua o hielo?",
+    "jawaban": "Erosión"
   },
   { "author" : "MrfZvx-/",
     "index": 143,
-    "soal": "Ikan yang merupakan kerabat dekat ikan tuna, sering diolah menjadi kerupuk, siomay, pempek?",
-    "jawaban": "Ikan tenggiri"
+    "soal": "¿Pescado que es un pariente cercano del atún, a menudo procesado en galletas saladas, albóndigas?",
+    "jawaban": "Caballa"
   },
   { "author" : "MrfZvx-/",
     "index": 144,
-    "soal": "Sebuah jenis tari pergaulan tradisional masyarakat Sunda, khusunya daerah Karawang?",
-    "jawaban": "Jaipongan"
+    "soal": "¿Cuántas patas tiene la araña?",
+    "jawaban": "8"
   },
   { "author" : "MrfZvx-/",
     "index": 145,
-    "soal": "Sistem bilangan dimana penulisan angka menggunakan dua simbol yaitu 0 dan 1?",
-    "jawaban": "Biner"
+    "soal": "¿Un sistema numérico en el que los números se escriben usando dos símbolos, 0 y 1?",
+    "jawaban": "Binario"
   },
   { "author" : "MrfZvx-/",
     "index": 146,
-    "soal": "Rempah dari biji keluarga jahe-jahean, merupakan rempah termahal ketiga di dunia?",
-    "jawaban": "Kapulaga"
+    "soal": "¿Cuál es la especia de las semillas de la familia del jengibre? es la tercera especia más cara del mundo",
+    "jawaban": "Cardamomo"
   },
   { "author" : "MrfZvx-/",
     "index": 147,
-    "soal": "Benua yang meliputi Kutub Selatan bumi memiliki suhu yang sangat rendah?",
-    "jawaban": "Antartika"
+    "soal": "¿El continente que cubre el Polo Sur de la Tierra tiene una temperatura muy baja?",
+    "jawaban": "Antártida"
   },
   { "author" : "MrfZvx-/",
     "index": 148,
-    "soal": "Senjata pelontar yang banyak digunakan pada Abad Pertengahan untuk menghancurkan dinding?",
-    "jawaban": "Trebuset"
+    "soal": "¿El arma arrojadiza que fue ampliamente utilizada en la Edad Media para destruir muros?",
+    "jawaban": "Trebuquete"
   },
   { "author" : "MrfZvx-/",
     "index": 149,
-    "soal": "Serpihan putih yang merupakan pengelupasan kulit mati berlebihan di kepala?",
-    "jawaban": "Ketombe"
+    "soal": "¿Copos blancos que son exfoliación excesiva de piel muerta en la cabeza?",
+    "jawaban": "Caspa"
   },
   { "author" : "MrfZvx-/",
     "index": 150,
-    "soal": "Ilmu yang mempelajari bahasa dalam naskah-naskah manuskrip zaman kuno?",
-    "jawaban": "Filologi"
+    "soal": "¿La ciencia que estudia el lenguaje en manuscritos antiguos?",
+    "jawaban": "Filología"
   },
   { "author" : "MrfZvx-/",
     "index": 151,
-    "soal": "Susu yang hanya dihasilkan pada tahap akhir kehamilan beberapa hari setelah melahirkan?",
-    "jawaban": "Kolostrum"
+    "soal": "¿Cuál es el color que representa la esperanza?",
+    "jawaban": "Verde"
   },
   { "author" : "MrfZvx-/",
     "index": 152,
-    "soal": "Tanaman asli Jepang terasa tajam/pedas yang dimakan sebagai penyedap masakan Jepang?",
+    "soal": "¿Una planta originaria de Japón tiene un sabor fuerte/picante que se come como saborizante en la cocina japonesa?",
     "jawaban": "Wasabi"
   },
   { "author" : "MrfZvx-/",
     "index": 153,
-    "soal": "Olahraga yang menggunakan tongkat pemukul, lapangannya berbentuk bujur sangkar?",
-    "jawaban": "Bisbol"
+    "soal": "¿Un deporte que usa un bate, el campo es cuadrado?",
+    "jawaban": "Béisbol"
   },
   { "author" : "MrfZvx-/",
     "index": 154,
-    "soal": "Bumbu khas untuk masakan Batak Toba yang juga dikenal sebagai merica Batak?",
-    "jawaban": "Andaliman"
+    "soal": "¿Cuál es el país más poblado de la Tierra?",
+    "jawaban": "China"
   },
   { "author" : "MrfZvx-/",
     "index": 155,
-    "soal": "Sistem pemerintahan yang dianut oleh negara Inggris, Jepang, Belanda, Malaysia, Singapura?",
-    "jawaban": "Parelementer"
+    "soal": "¿El sistema de gobierno adoptado por el Reino Unido, Japón, los Países Bajos, Malasia, Singapur?",
+    "jawaban": "Parlamentario"
   },
   { "author" : "MrfZvx-/",
     "index": 156,
-    "soal": "Makanan tradisional Korea berupa asinan sayur hasil fermentasi yang diberi bumbu pedas?",
-    "jawaban": "Kimchi"
+    "soal": "¿Cuál es el tercer planeta en el sistema solar?",
+    "jawaban": "La Tierra"
   },
   { "author" : "MrfZvx-/",
     "index": 157,
-    "soal": "Istilah untuk sesuatu yang bertujuan sosial atau lingkungan, bukan bertujuan keuntungan materi?",
-    "jawaban": "Nirlaba"
+    "soal": "Si 50 es el 100%, ¿cuánto es el 90%?",
+    "jawaban": "45"
   },
   { "author" : "MrfZvx-/",
     "index": 158,
-    "soal": "Gerakan yang memperjuangkan kesetaraan bagi perempuan dalam politik, ekonomi, budaya, dsb?",
-    "jawaban": "Feminisme"
+    "soal": "¿Un movimiento que lucha por la igualdad de las mujeres en política, economía, cultura, etc.?",
+    "jawaban": "Feminismo"
   },
   { "author" : "MrfZvx-/",
     "index": 159,
-    "soal": "Minuman hasil fermentasi teh dan gula yang berasal dari Asia Timur?",
-    "jawaban": "Kombucha"
+    "soal": "¿Qué deporte practicaba Michael Jordan",
+    "jawaban": "Baloncesto"
   },
   { "author" : "MrfZvx-/",
     "index": 160,
-    "soal": "Kelompok garis kerras dari Rusia tahun 1903 yang berpikir perubahan harus dimenangkan dengan senjata?",
-    "jawaban": "Bolshevic"
+    "soal": "¿Dónde se encuentra la famosa Torre Eiffel?",
+    "jawaban": "París"
   },
   { "author" : "MrfZvx-/",
     "index": 161,
-    "soal": "Nama pulau vulkanik yang berada di tengah Danau Toba Sumatera Utara?",
-    "jawaban": "Samosir"
+    "soal": "¿Cuál es el país más grande del mundo?",
+    "jawaban": "Rusia"
   },
   { "author" : "MrfZvx-/",
     "index": 162,
-    "soal": "Prajurit pada zaman Yunani Kuno, berfungsi sebagai penombak dalam formasi phalanx?",
-    "jawaban": "Hoplites"
+    "soal": "¿Soldados en la antigua Grecia, funcionando como lanceros en una formación de falange?",
+    "jawaban": "Hoplitas"
   },
   { "author" : "MrfZvx-/",
     "index": 163,
-    "soal": "Nama dari sebuah pekan yang terdiri dari 5 hari dalam budaya Jawa dan Bali?",
-    "jawaban": "Pancawara"
+    "soal": "¿Quién es el rey del Pop?",
+    "jawaban": "Michael Jackson"
   },
   { "author" : "MrfZvx-/",
     "index": 164,
-    "soal": "Cara penyajian makanan pada masa kolonial Belanda dengan berbagai macam hidangan Nusantara?",
-    "jawaban": "Rijsttafel"
+    "soal": "¿Qué producto cultiva más Colombia?",
+    "jawaban": "Café"
   },
   { "author" : "MrfZvx-/",
     "index": 165,
-    "soal": "Istilah untuk budidaya menanamdengan memanfaatkan air tanpa menggunakan tanah?",
-    "jawaban": "Hidroponik"
+    "soal": "¿El término para el cultivo con agua sin usar suelo?",
+    "jawaban": "Hidroponia"
   },
   { "author" : "MrfZvx-/",
     "index": 166,
-    "soal": "Jenis logam paling berlimpah di Bumi, merupakan konduktor listrik yang paling baik?",
-    "jawaban": "Aluminium"
+    "soal": "¿Cuál es el metal más abundante en la Tierra? es el mejor conductor de electricidad",
+    "jawaban": "Aluminio"
   },
   { "author" : "MrfZvx-/",
     "index": 167,
-    "soal": "Sebuah organisasi ekonomi berdasarkan ekonomi rakyat dan asas kekeluargaan?",
-    "jawaban": "Koperasi"
+    "soal": "¿Una organización económica basada en la economía de las personas y el principio de parentesco?",
+    "jawaban": "Cooperativa"
   },
   { "author" : "MrfZvx-/",
     "index": 168,
-    "soal": "Hari raya umat hindu, dirayakan setiap 210 hari menggunakan perhitungan kalender Bali?",
-    "jawaban": "Galungan"
+    "soal": "¿En qué país se encuentra la torre de Pisa?",
+    "jawaban": "Italia"
   },
   { "author" : "MrfZvx-/",
     "index": 169,
-    "soal": "Ilmu yang mempelajari bentuk permukaan bumi serta permukaan planet, satelit alami, asteroid?",
-    "jawaban": "Topografi"
+    "soal": "¿La ciencia que estudia la forma de la superficie terrestre así como la superficie de los planetas, satélites naturales, asteroides?",
+    "jawaban": "Topografía"
   },
   { "author" : "MrfZvx-/",
     "index": 170,
-    "soal": "Persembahan kepada dewa atau arwah nenek moyang oleh penganut kepercayaan kuno di Indonesia?",
-    "jawaban": "Sesajen"
+    "soal": "Quién pintó 'La última cena'?",
+    "jawaban": "Leonardo da Vinci"
   },
   { "author" : "MrfZvx-/",
     "index": 171,
-    "soal": "Judul lagurakyat Korea, sekaligus simbol Korea, dikenal di Korea Utara maupun Korea Selatan?",
+    "soal": "El título de la canción popular coreana, así como el símbolo de Corea, ¿se conoce en Corea del Norte y del Sur?",
     "jawaban": "Arirang"
   },
   { "author" : "MrfZvx-/",
     "index": 172,
-    "soal": "Istilah bentuk bangsa pengembara yang memilih hidup berpindah-pindah untuk bertahan hidup?",
-    "jawaban": "Nomaden"
+    "soal": "¿El término forma de una nación nómada que elige moverse para sobrevivir?",
+    "jawaban": "Nómada"
   },
   { "author" : "MrfZvx-/",
     "index": 173,
-    "soal": "Sejenis jamur pinus langka yang menjadi bahan makanan mewah berharga mahal di Jepang?",
+    "soal": "¿Un tipo raro de hongo de pino que es un ingrediente alimenticio de lujo caro en Japón?",
     "jawaban": "Matsutake"
   },
   { "author" : "MrfZvx-/",
     "index": 174,
-    "soal": "Suatu adat masyarakat yang mengatur alur keturunan berasal dari pihak ibu?",
-    "jawaban": "Matrilineal"
+    "soal": "¿En qué año acabó la II Guerra Mundial?",
+    "jawaban": "1945"
   },
   { "author" : "MrfZvx-/",
     "index": 175,
-    "soal": "Padang rumput yang dipenuhi semak dan beberapa jenis pohon yang tumbuh menyebar?",
-    "jawaban": "Sabana"
+    "soal": "¿Un prado lleno de arbustos y algún tipo de árbol que crece extendido?",
+    "jawaban": "sabana"
   },
   { "author" : "MrfZvx-/",
     "index": 176,
-    "soal": "Penjelajah asal italia yang menemukan benua amerika pada tahun 1492?",
-    "jawaban": "Capoerira"
+    "soal": "¿El explorador italiano que descubrió América en 1492?",
+    "jawaban": "Cristóbal Colón"
   },
   { "author" : "MrfZvx-/",
     "index": 177,
-    "soal": "Skor atau skala yang digunakan unuk menilai kondisi kesehatan bayi yang baru lahir?",
-    "jawaban": "Apgar"
+    "soal": "¿Qué cantidad de huesos en el humano adulto?",
+    "jawaban": "206"
   },
   { "author" : "MrfZvx-/",
     "index": 178,
-    "soal": "Salah satu pulau di Sulawesi Utara yang memiliki biodiversitas kelautan tertinngi di dunia?",
-    "jawaban": "Bunaken"
+    "soal": "¿Qué tipo de animal es la ballena?",
+    "jawaban": "Mamífero"
   },
   { "author" : "MrfZvx-/",
     "index": 179,
-    "soal": "Ahli pengaplikasian ilmu keuangan dan teori statistik pada persoalan bisnis aktual?",
-    "jawaban": "Aktuaris"
+    "soal": "¿Experto en aplicar la ciencia financiera y la teoría estadística a problemas empresariales reales?",
+    "jawaban": "Actuario"
   },
   { "author" : "MrfZvx-/",
     "index": 180,
-    "soal": "Tradisi sepasang pengantin meminta doa restu kepada orang tua kedua belah pihak?",
-    "jawaban": "Sungkem"
+    "soal": "¿La tradición de los novios pidiendo bendiciones a los padres de ambas partes?",
+    "jawaban": "Casamiento"
   },
   { "author" : "MrfZvx-/",
     "index": 181,
-    "soal": "Jenis saus berwarna putih yang terbuat dari minyak nabati, telur ayam, dan cuka?",
-    "jawaban": "Mayones"
+    "soal": "¿El tipo de salsa blanca hecha de aceite vegetal, huevos de gallina y vinagre?",
+    "jawaban": "Mayonesa"
   },
   { "author" : "MrfZvx-/",
     "index": 182,
-    "soal": "Istilah yang artinya tidak memberikan suara atau sikap dalam sebuah pemungutan suara?",
-    "jawaban": "Abstain"
+    "soal": "¿Un término que significa no voto o actitud en una votación?",
+    "jawaban": "Abstenerse"
   },
   { "author" : "MrfZvx-/",
     "index": 183,
-    "soal": "Salah satu bunga nasional indonesia memiliki julukan sebagai puspa bangsa?",
-    "jawaban": "Melati"
+    "soal": "¿En qué continente está Perú?",
+    "jawaban": "América"
   },
   { "author" : "MrfZvx-/",
     "index": 184,
-    "soal": "Alat musik dawai yang dimainkan dengan cara dipetik, berasal dari Rote, NTT?",
-    "jawaban": "Sasando"
+    "soal": "¿Cómo se llama la Reina del Reino Unido?",
+    "jawaban": "Isabel"
   },
   { "author" : "MrfZvx-/",
     "index": 185,
-    "soal": "Batu yang menggantungkan dan meneteskan air dari langit-langit gua kapur?",
-    "jawaban": "Stalaktit"
+    "soal": "¿La roca que cuelga y gotea del techo de una cueva de piedra caliza?",
+    "jawaban": "Estalactitas"
   },
   { "author" : "MrfZvx-/",
     "index": 186,
-    "soal": "Ikon negara singapura berupa patung berkepala singa dengan berbadan ikan?",
+    "soal": "¿El ícono nacional de Singapur es una estatua con la cabeza de un león con el cuerpo de un pez es?",
     "jawaban": "Merlion"
   },
   { "author" : "MrfZvx-/",
     "index": 187,
-    "soal": "Istilah dalam catur ketika posisi raja tidak bisa lepas dari pergerakan lawan?",
-    "jawaban": "Sekakmat"
+    "soal": "¿El término en el ajedrez cuando la posición del rey no puede separarse del movimiento del oponente?",
+    "jawaban": "Jaqu mate"
   },
   { "author" : "MrfZvx-/",
     "index": 188,
-    "soal": "Alat untuk mengukur tekanan udara, digunakan dalam peramalan cuaca?",
-    "jawaban": "Barometer"
+    "soal": "¿Un instrumento para medir la presión del aire, utilizado en la predicción del tiempo?",
+    "jawaban": "Barómetro"
   },
   { "author" : "MrfZvx-/",
     "index": 189,
-    "soal": "Presiden amerika ke 32 satu-satunya yang terpilih sebanyak 4 kali?",
+    "soal": "¿El 32º presidente de Estados Unido, el único que ha sido elegido 4 veces?",
     "jawaban": "Roosevelt"
   },
   { "author" : "MrfZvx-/",
     "index": 190,
-    "soal": "Jenis rumah arsitektur tradisional Jawa terbangun dari empat tiang utama?",
-    "jawaban": "Limasan"
+    "soal": "¿Cuál es el río más largo del mundo?",
+    "jawaban": "Amazonas"
   },
   { "author" : "MrfZvx-/",
     "index": 191,
-    "soal": "Istilah bahasa Jepang untuk karakter gambar yang digunakan dalam pesan elektronik?",
-    "jawaban": "Emoji"
+    "soal": "¿El término para los caracteres de imágenes que se utilizan en los mensajes electrónicos?",
+    "jawaban": "Emojis"
   },
   { "author" : "MrfZvx-/",
     "index": 192,
-    "soal": "Salah satu senjata belati khas Nusantara yang seringkali bilahnya berkelok-kelok?",
-    "jawaban": "Keris"
+    "soal": "¿Cuál es el lugar más frío de la tierra?",
+    "jawaban": "Antártida"
   },
   { "author" : "MrfZvx-/",
     "index": 193,
-    "soal": "Penduduk asli benua Australia yang berciri kulit gelap dan rambut keriting?",
-    "jawaban": "Aborigin"
+    "soal": "¿Quién escribió la Odisea?",
+    "jawaban": "Homero"
   },
   { "author" : "MrfZvx-/",
     "index": 194,
-    "soal": "Tarian khas suku gayo dari aceh, ditampilkan untuk merayakan peristiwa penting?",
-    "jawaban": "Tari saman"
+    "soal": "¿Un baile típico del Perú usando una vela, realizado para celebrar un evento importante?",
+    "jawaban": "Alcatraz"
   },
   { "author" : "MrfZvx-/",
     "index": 195,
-    "soal": "Bentuk muda serangga atau amfibia yang perkembangannya melalui metamorfosis?",
-    "jawaban": "Larva"
+    "soal": "¿La forma joven de insectos o anfibios cuyo desarrollo es por metamorfosis?",
+    "jawaban": "Larvas"
   },
   { "author" : "MrfZvx-/",
     "index": 196,
-    "soal": "Tempat kapal ditambatkan di pelabuhan untuk kegiatan bongkar muat barang?",
-    "jawaban": "Dermaga"
+    "soal": "¿Dónde está amarrado el barco en el puerto para la carga y descarga de mercancías?",
+    "jawaban": "Muelle"
   },
   { "author" : "MrfZvx-/",
     "index": 197,
-    "soal": "Jenis jam tangan yang digerakkan oleh mesin bertenaga listrik atau baterai?",
+    "soal": "¿Qué tipo de reloj funciona con un motor eléctrico o con pilas?",
     "jawaban": "Quartz"
   },
   { "author" : "MrfZvx-/",
     "index": 198,
-    "soal": "Suku penganut Agama Hindu yang tinggal di sekitar pegunungan Bromo dan Semeru?",
-    "jawaban": "Tengger"
+    "soal": "¿En qué año se 'descubrió' América?",
+    "jawaban": "1492"
   },
   { "author" : "MrfZvx-/",
     "index": 199,
-    "soal": "Mainan yang bisa berputar padaporos dan berkesetimbangan pada suatu titik?",
-    "jawaban": "Gasing"
+    "soal": "¿Cuál es el nombre del lago más popular en Ica?",
+    "jawaban": "Huacachina"
   },
   { "author" : "MrfZvx-/",
     "index": 200,
-    "soal": "Tanaman polong-polongan yang merupakan sumber utama protein nabati dunia?",
-    "jawaban": "Kedelai"
+    "soal": "¿Qué legumbres son la principal fuente de proteína vegetal del mundo?",
+    "jawaban": "Soja"
   },
   { "author" : "MrfZvx-/",
     "index": 201,
-    "soal": "Cairan tidak berwarna, tidak berbau, digunakan sebagai senjata kimia pemusnah massal?",
-    "jawaban": "Sarin"
+    "soal": "¿El Team Omega es el mejor team de tareas? (responde que 'Sí', o ban 😁)",
+    "jawaban": "Sí"
   },
   { "author" : "MrfZvx-/",
     "index": 202,
-    "soal": "Cabang ilmu kedokteran gigi yang khusus mempelajari ilmu merapikan gigi?",
-    "jawaban": "Ortodonti"
+    "soal": "¿La rama de la odontología que se especializa en la ciencia de enderezar los dientes?",
+    "jawaban": "Ortodoncia"
   },
   { "author" : "MrfZvx-/",
     "index": 203,
-    "soal": "Sstilah yang berasal dari Bahasa Italia, artinya penari baletperempuan?",
-    "jawaban": "Balerina"
+    "soal": "¿Gentilicio de Dinamarca?",
+    "jawaban": "Danés"
   },
   { "author" : "MrfZvx-/",
     "index": 204,
-    "soal": "Sawah berundak di Bali yang diakui UNESCO sebagai Warisan Budaya Dunia?",
-    "jawaban": "Jatiluwih"
+    "soal": "¿Plato bandera del Perú??",
+    "jawaban": "Ceviche"
   },
   { "author" : "MrfZvx-/",
     "index": 205,
-    "soal": "Makanan pokok pengganti nasi yang dibuat dari ketela pohon atau singkong?",
-    "jawaban": "Tiwul"
+    "soal": "¿Zorro famoso en Lima :u?",
+    "jawaban": "Run run"
   },
   { "author" : "MrfZvx-/",
     "index": 206,
-    "soal": "Bagian mata yang mengubah cahaya menjadi sinyal saraf?",
+    "soal": "¿Qué parte del ojo convierte la luz en señales nerviosas?",
     "jawaban": "Retina"
   },
   { "author" : "MrfZvx-/",
     "index": 207,
-    "soal": "Nama mesin penyandi yang digunakan Jerman nazi pada Perang Dunia II?",
+    "soal": "¿Cómo se llamaba la máquina de codificación utilizada por la Alemania nazi en la Segunda Guerra Mundial?",
     "jawaban": "Enigma"
   },
   { "author" : "MrfZvx-/",
     "index": 208,
-    "soal": "Kosmetika yang terbuat dari lilin, pigmen, minyak, diaplikasikan pada bibir?",
-    "jawaban": "Lipstik"
+    "soal": "¿Cosméticos hechos de cera, pigmento, aceite, aplicados a los labios?",
+    "jawaban": "Lápiz labial"
   },
   { "author" : "MrfZvx-/",
     "index": 209,
-    "soal": "Bumbu makanan yang terbuat dari fermentasi kedelai, terigu, dan garam?",
-    "jawaban": "Tauco"
+    "soal": "¿Condimento alimenticio elaborado con soja fermentada, harina y sal, popular en México?",
+    "jawaban": "Taco"
   },
   { "author" : "MrfZvx-/",
     "index": 210,
-    "soal": "Hewan renik yang dapat menurunkan produktivitas hewan yang diumpanginya?",
-    "jawaban": "Parasit"
+    "soal": "¿Microorganismos que pueden reducir la productividad de los animales que alimentan?",
+    "jawaban": "Parásito"
   },
   { "author" : "MrfZvx-/",
     "index": 211,
-    "soal": "Cairan manis yang diproduksi bunga untuk menarik kedatangan hewan penyerbuk?",
-    "jawaban": "Nektar"
+    "soal": "¿El dulce líquido que producen las flores para atraer a los polinizadores?",
+    "jawaban": "Néctar"
   },
   { "author" : "MrfZvx-/",
     "index": 212,
-    "soal": "Proses pembuatan daratan baru dari dasar laut atau dasar sungai?",
-    "jawaban": "Reklamasi"
+    "soal": "¿Qué significa SDLG??",
+    "jawaban": "Seguidores de la grasa"
   },
   { "author" : "MrfZvx-/",
     "index": 213,
-    "soal": "Istilah untuk keadaan niat sebelum melaksanakan ibadah Haji atau Umroh?",
-    "jawaban": "Ihram"
+    "soal": "¿Nombre (OJO, SÓLO NOMBRE) del actual presidente de la república",
+    "jawaban": "Pedro"
   },
   { "author" : "MrfZvx-/",
     "index": 214,
-    "soal": "Alat musik senar khas suku Banjar, dimainkan dengan cara dipetik?",
-    "jawaban": "Panting"
+    "soal": "¿Un instrumento criollo hecho de madera, tiene un agujero y se sienta en ello para usarlo?",
+    "jawaban": "Guitarra"
   },
   { "author" : "MrfZvx-/",
     "index": 215,
-    "soal": "Penyakit virus mematikan yang mewabah di Afrika Barat tahun 2014?",
-    "jawaban": "Ebola"
+    "soal": "¿La mortal enfermedad viral que asoló África Occidental en 2014?",
+    "jawaban": "Ébola"
   },
   { "author" : "MrfZvx-/",
     "index": 216,
-    "soal": "Jenis musang yang dikenal suka menyantap biji kopi secara utuh?",
-    "jawaban": "Luwak"
+    "soal": "¿El tipo de hurón que se sabe que come granos de café enteros?",
+    "jawaban": "Mangosta"
   },
   { "author" : "MrfZvx-/",
     "index": 217,
-    "soal": "Nama pedang yang dimiliki raja Arthur menurut mitologi Britania Raya?",
+    "soal": "¿El nombre de la espada que tenía el rey Arturo según la mitología británica?",
     "jawaban": "Excalibur"
   },
   { "author" : "MrfZvx-/",
     "index": 218,
-    "soal": "Negara yang memiliki bendera merah putih persis seperti Indonesia?",
-    "jawaban": "Monako"
+    "soal": "¿Un país que tiene una bandera roja y blanca como Perú?",
+    "jawaban": "Canadá"
   },
   { "author" : "MrfZvx-/",
     "index": 219,
-    "soal": "Suatu pertunjukan teater yang menggunakan isyarat gerak tubuh tanpa suara?",
-    "jawaban": "Pantomim"
+    "soal": "¿Una representación teatral con gestos silenciosos?",
+    "jawaban": "Pantomima"
   },
   { "author" : "MrfZvx-/",
     "index": 220,
-    "soal": "Tradisi pernikahan calon mempelai wanita tidak diperkenankan keluar rumah?",
-    "jawaban": "Pingitan"
+    "soal": "¿La tradición nupcial de los novios no permite salir de casa?",
+    "jawaban": "Pisao"
   },
   { "author" : "MrfZvx-/",
     "index": 221,
-    "soal": "Tipe hewan yang beraktivitas pada malam hari dan tidur pada siang hari?",
-    "jawaban": "Nokturnal"
+    "soal": "¿Qué tipo de animal está activo por la noche y duerme durante el día?",
+    "jawaban": "Nocturno"
   },
   { "author" : "MrfZvx-/",
     "index": 222,
-    "soal": "Kelainan bawaan tidak adanya pigmen melanin pada mata, kulit, rambut?",
-    "jawaban": "Albinisme"
+    "soal": "¿Anomalía congénita de la ausencia del pigmento melanina en los ojos, piel, cabello?",
+    "jawaban": "Albinismo"
   },
   { "author" : "MrfZvx-/",
     "index": 223,
-    "soal": "Cabang ilmu linguistik yang mempelajari asal usul kata?",
-    "jawaban": "Etimologi"
+    "soal": "¿La rama de la lingüística que estudia el origen de las palabras?",
+    "jawaban": "Etimología"
   },
   { "author" : "MrfZvx-/",
     "index": 224,
-    "soal": "Jenis ikan yang dapat melompat kedaratan, terdapat di Pulau Kalimantan?",
-    "jawaban": "Tembakul"
-  },
-  { "author" : "MrfZvx-/",
-    "index": 225,
-    "soal": "Mata uang elektronik dengan teknologi blockchain yang diciptakan pada tahun 2009?",
+    "soal": "¿Una moneda electrónica con tecnología blockchain creada en 2009?",
     "jawaban": "Bitcoin"
-  },
-  { "author" : "MrfZvx-/",
-    "index": 226,
-    "soal": "Pengusaha rokok terbesar tahun 1918 pemilik pabrik kretek tjap bal tiga?",
-    "jawaban": "Nitisemito"
-  },
-  { "author" : "MrfZvx-/",
-    "index": 227,
-    "soal": "Pelukis ekspresionis ini dikenal sebagai maestro seni lukis Indonesia?",
-    "jawaban": "Affandi"
   }
 ]
